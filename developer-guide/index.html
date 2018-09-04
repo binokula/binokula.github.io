@@ -309,6 +309,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#delete-user" title="Delete User" class="md-nav__link">
+    Delete User
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -470,6 +477,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#delete-user" title="Delete User" class="md-nav__link">
+    Delete User
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -575,21 +589,30 @@ Response:</li>
 <span class="p">}</span>
 </pre></div>
 
-<p>Delete User
-URL: https://open4biapi.azurewebsites.net/api/User</p>
-<p>HTTP Verb: Delete</p>
-<p>Headers:</p>
-<p>client_secret
-Parameters:</p>
-<p>email
-tenant
-code
-This is a function key provided to the customer to access this endpoint
-Response:</p>
-<p>Status: 200 OK</p>
-<p>{
-    "message": "\"Successfully removed example@example.com\""
-}</p>
+<h4 id="delete-user">Delete User</h4>
+<p><strong>URL:</strong> https://open4biapi.azurewebsites.net/api/User</p>
+<p><strong>HTTP Verb:</strong> Delete</p>
+<p><strong>Headers:</strong></p>
+<ul>
+<li>client_secret</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li>email</li>
+<li>tenant</li>
+<li>code<ul>
+<li>This is a function key provided to the customer to access this endpoint</li>
+</ul>
+</li>
+</ul>
+<p><strong>Response:</strong></p>
+<ul>
+<li>Status: 200 OK</li>
+</ul>
+<div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;\&quot;Successfully removed example@example.com\&quot;&quot;</span>
+<span class="p">}</span>
+</pre></div>
                 
                   
                 

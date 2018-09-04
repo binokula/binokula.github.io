@@ -93,25 +93,28 @@ The User Management API enables external applications to register and delete use
 }
 ```
 
-Delete User
-URL: https://open4biapi.azurewebsites.net/api/User
+####Delete User
+**URL:** https://open4biapi.azurewebsites.net/api/User
 
-HTTP Verb: Delete
+**HTTP Verb:** Delete
 
-Headers:
+**Headers:**
 
-client_secret
-Parameters:
+* client_secret
 
-email
-tenant
-code
-This is a function key provided to the customer to access this endpoint
-Response:
+**Parameters:**
 
-Status: 200 OK
+* email
+* tenant
+* code
+    * This is a function key provided to the customer to access this endpoint
 
+**Response:**
 
+* Status: 200 OK
+
+```json
 {
     "message": "\"Successfully removed example@example.com\""
 }
+```

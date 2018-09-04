@@ -5,7 +5,7 @@
 * Azure AD SSO Integration. If your company uses Azure AD, you should be able to authenticate automatically. We will continue to streamline this process as part of our next release
 * Mobile Paging Support. This release enables controls on the mobile view to jump across report pages.
 ####Enhancements
-* Azure REDIS Failover Ugrade. As part of the 30 minutes outage (our first in over 3 months) we experienced on Azure REDIS last week, we have added redundancy and failover for Azure REDIS.
+* Azure REDIS Failover Upgrade. As part of the 30 minutes outage (our first in over 3 months) we experienced on Azure REDIS last week, we have added redundancy and failover for Azure REDIS.
 
 ###July 31, 2018
 ####New
@@ -24,7 +24,7 @@
 
 ###July 4, 2018
 ####New
-* Portal Settings added to allow re-direct or tab close on logout.
+* Portal Settings added to allow redirect or tab close on logout.
 
 ###June 28, 2018
 ####New

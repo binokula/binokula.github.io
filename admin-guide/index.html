@@ -455,17 +455,17 @@
                 <h1 id="admin-guide">Admin Guide</h1>
 <h3 id="getting-a-binokula-tenant">Getting a Binokula Tenant</h3>
 <p>A Binokula Tenant is your dedicated area for publishing, hosting and managing access to your report content. Only organizations who wish to share and control access to report need a tenant. If you are expecting to just access reports in Binokula, you will need to be added as a user on a tenant.</p>
-<p>If you are an orgnization who wishes to get a trial tenant, please contact <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#97;&#108;&#101;&#115;&#64;&#98;&#105;&#110;&#111;&#107;&#117;&#108;&#97;&#46;&#99;&#111;&#109;">&#115;&#97;&#108;&#101;&#115;&#64;&#98;&#105;&#110;&#111;&#107;&#117;&#108;&#97;&#46;&#99;&#111;&#109;</a>.</p>
+<p>If you are an organization who wishes to get a trial tenant, please contact <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#97;&#108;&#101;&#115;&#64;&#98;&#105;&#110;&#111;&#107;&#117;&#108;&#97;&#46;&#99;&#111;&#109;">&#115;&#97;&#108;&#101;&#115;&#64;&#98;&#105;&#110;&#111;&#107;&#117;&#108;&#97;&#46;&#99;&#111;&#109;</a>.</p>
 <p>If you are expecting to already have access to reports in Binokula, you can enter your email address at <a href="https://binokula.app">https://binokula.app</a> or contact the orgnization whose report content you wish to access.</p>
 <h3 id="building-and-publishing-reports">Building and Publishing Reports</h3>
 <h4 id="building-a-report-without-rls">Building a Report without RLS</h4>
-<p>Binokula uses Microsoft Power BI as its report building tool. For a report to be correctly published in Binokula, the report has to adhere to the following pre-prequisites:</p>
+<p>Binokula uses Microsoft Power BI as its report building tool. For a report to be correctly published in Binokula, the report has to adhere to the following prequisites:</p>
 <ul>
 <li>Must have a security role called "User_Security" needs to be added.</li>
 <li>Should have a DAX filter on the Entity to User Mapping List which uses the USERNAME() function. (Only required for Row-Level-Security)</li>
 </ul>
 <h4 id="building-a-report-with-rls">Building a Report with RLS</h4>
-<p>Building a report with RLS requires the report to adhere to the following pre-requisites:</p>
+<p>Building a report with RLS requires the report to adhere to the following prerequisites:</p>
 <ul>
 <li>Must have a security role called "User_Security" needs to be added.</li>
 <li>Must have a DAX filter on the Entity to User Mapping List which uses the USERNAME() function. (Only required for Row-Level-Security)</li>
@@ -488,7 +488,7 @@
 <li>Creating a new Report Group in the report group administration page;</li>
 <li>Adding the new report to the Report Group;</li>
 <li>Adding yourself as a user in the report group; and</li>
-<li>Selecting the report ing the Reports user page.</li>
+<li>Selecting the report in the Reports user page.</li>
 </ol>
 <h4 id="assigning-more-users-and-reports">Assigning more users and reports</h4>
 <p>The process is exactly the same as the previous step, all you have to do is add more users. If will be too time-consuming to add users by one-by-one, you can create a script to call Binokula REST API to add users in bulk. Please see the developer guide for details on the REST API. If you need to expose more than one report to a specific audience, multiple reports can also be added to a report group through the Report Group administration page.</p>

@@ -3,19 +3,19 @@
 ###Getting a Binokula Tenant
 A Binokula Tenant is your dedicated area for publishing, hosting and managing access to your report content. Only organizations who wish to share and control access to report need a tenant. If you are expecting to just access reports in Binokula, you will need to be added as a user on a tenant.
 
-If you are an orgnization who wishes to get a trial tenant, please contact <sales@binokula.com>.
+If you are an organization who wishes to get a trial tenant, please contact <sales@binokula.com>.
 
 If you are expecting to already have access to reports in Binokula, you can enter your email address at <https://binokula.app> or contact the orgnization whose report content you wish to access.
 
 ###Building and Publishing Reports
 ####Building a Report without RLS
-Binokula uses Microsoft Power BI as its report building tool. For a report to be correctly published in Binokula, the report has to adhere to the following pre-prequisites:
+Binokula uses Microsoft Power BI as its report building tool. For a report to be correctly published in Binokula, the report has to adhere to the following prequisites:
 
 * Must have a security role called "User_Security" needs to be added.
 * Should have a DAX filter on the Entity to User Mapping List which uses the USERNAME() function. (Only required for Row-Level-Security)
 
 ####Building a Report with RLS
-Building a report with RLS requires the report to adhere to the following pre-requisites:
+Building a report with RLS requires the report to adhere to the following prerequisites:
 
 * Must have a security role called "User_Security" needs to be added.
 * Must have a DAX filter on the Entity to User Mapping List which uses the USERNAME() function. (Only required for Row-Level-Security)
@@ -39,7 +39,7 @@ Any new report published are by default not accessible to any users. Access to r
 + Creating a new Report Group in the report group administration page;
 + Adding the new report to the Report Group;
 + Adding yourself as a user in the report group; and
-+ Selecting the report ing the Reports user page.
++ Selecting the report in the Reports user page.
 
 ####Assigning more users and reports
 The process is exactly the same as the previous step, all you have to do is add more users. If will be too time-consuming to add users by one-by-one, you can create a script to call Binokula REST API to add users in bulk. Please see the developer guide for details on the REST API. If you need to expose more than one report to a specific audience, multiple reports can also be added to a report group through the Report Group administration page.

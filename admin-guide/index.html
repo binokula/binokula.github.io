@@ -36,7 +36,7 @@
     
     
       
-        <title>Admin Guide - Binokula Docs</title>
+        <title>Admin Guide - Binokula Documentation</title>
       
     
     
@@ -80,9 +80,9 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href=".." title="Binokula Docs" class="md-header-nav__button md-logo">
+        <a href=".." title="Binokula Documentation" class="md-header-nav__button md-logo">
           
-            <i class="md-icon"></i>
+            <img src="../images/logo.png" width="24" height="24">
           
         </a>
       </div>
@@ -94,7 +94,7 @@
           
             
               <span class="md-header-nav__topic">
-                Binokula Docs
+                Binokula Documentation
               </span>
               <span class="md-header-nav__topic">
                 Admin Guide
@@ -152,12 +152,12 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href=".." title="Binokula Docs" class="md-nav__button md-logo">
+    <a href=".." title="Binokula Documentation" class="md-nav__button md-logo">
       
-        <i class="md-icon"></i>
+        <img src="../images/logo.png" width="48" height="48">
       
     </a>
-    Binokula Docs
+    Binokula Documentation
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -168,8 +168,8 @@
 
 
   <li class="md-nav__item">
-    <a href=".." title="Welcome to Binokula" class="md-nav__link">
-      Welcome to Binokula
+    <a href=".." title="Welcome" class="md-nav__link">
+      Welcome
     </a>
   </li>
 
@@ -298,7 +298,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Developer Guide/" title="Developer Guide" class="md-nav__link">
+    <a href="../developer-guide/" title="Developer Guide" class="md-nav__link">
       Developer Guide
     </a>
   </li>
@@ -310,8 +310,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../FAQ/" title="FAQ" class="md-nav__link">
-      FAQ
+    <a href="../user-guide/" title="User Guide" class="md-nav__link">
+      User Guide
     </a>
   </li>
 
@@ -322,8 +322,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../Release Notes/" title="Release Notes" class="md-nav__link">
+    <a href="../release-notes/" title="Release Notes" class="md-nav__link">
       Release Notes
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../faq/" title="FAQ" class="md-nav__link">
+      FAQ
     </a>
   </li>
 
@@ -441,18 +453,18 @@
                 
                 
                 <h1 id="admin-guide">Admin Guide</h1>
-<h2 id="getting-a-binokula-tenant">Getting a Binokula Tenant</h2>
+<h3 id="getting-a-binokula-tenant">Getting a Binokula Tenant</h3>
 <p>A Binokula Tenant is your dedicated area for publishing, hosting and managing access to your report content. Only organizations who wish to share and control access to report need a tenant. If you are expecting to just access reports in Binokula, you will need to be added as a user on a tenant.</p>
 <p>If you are an orgnization who wishes to get a trial tenant, please contact <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#97;&#108;&#101;&#115;&#64;&#98;&#105;&#110;&#111;&#107;&#117;&#108;&#97;&#46;&#99;&#111;&#109;">&#115;&#97;&#108;&#101;&#115;&#64;&#98;&#105;&#110;&#111;&#107;&#117;&#108;&#97;&#46;&#99;&#111;&#109;</a>.</p>
 <p>If you are expecting to already have access to reports in Binokula, you can enter your email address at <a href="https://binokula.app">https://binokula.app</a> or contact the orgnization whose report content you wish to access.</p>
-<h2 id="building-and-publishing-reports">Building and Publishing Reports</h2>
-<h3 id="building-a-report-without-rls">Building a Report without RLS</h3>
+<h3 id="building-and-publishing-reports">Building and Publishing Reports</h3>
+<h4 id="building-a-report-without-rls">Building a Report without RLS</h4>
 <p>Binokula uses Microsoft Power BI as its report building tool. For a report to be correctly published in Binokula, the report has to adhere to the following pre-prequisites:</p>
 <ul>
 <li>Must have a security role called "User_Security" needs to be added.</li>
 <li>Should have a DAX filter on the Entity to User Mapping List which uses the USERNAME() function. (Only required for Row-Level-Security)</li>
 </ul>
-<h3 id="building-a-report-with-rls">Building a Report with RLS</h3>
+<h4 id="building-a-report-with-rls">Building a Report with RLS</h4>
 <p>Building a report with RLS requires the report to adhere to the following pre-requisites:</p>
 <ul>
 <li>Must have a security role called "User_Security" needs to be added.</li>
@@ -460,16 +472,16 @@
 <li>Cross filter direction should be set to Both for the relationship with Entity to User Mapping List</li>
 <li>Apply security filter in both directions should be ticked for the relationship with Entity to User Mapping List</li>
 </ul>
-<h3 id="publishing-power-bi-reports">Publishing Power BI Reports</h3>
+<h4 id="publishing-power-bi-reports">Publishing Power BI Reports</h4>
 <p>Once you have have built and tested your Power BI report, the next step is to publish the report to your dedicated tenant. This is done with the unique publisher account, whose details you would have received as part of requesting your Binokula tenant. You can sign-in with the publisher account by clicking on "Sign in" in Power BI Desktop. If you are already signed in with a different account, click on the account name and select "Switch account". Once you are signed in, you can publish the report by:</p>
 <ol>
 <li>Saving any changes;</li>
 <li>Clicking on the "Publish" button on the Home menu; and </li>
 <li>Choosing "binokula" as the destination before clicking "Select"</li>
 </ol>
-<h3 id="report-for-mobile-viewing">Report for Mobile Viewing</h3>
+<h4 id="report-for-mobile-viewing">Report for Mobile Viewing</h4>
 <p>Power BI Mobile support are supported by Binokula. All you need to do is create the mobile view of a report in the Power BI Desktop file and publish it to your tenant. Please see <a href="https://docs.microsoft.com/en-us/power-bi/desktop-create-phone-report">Microsoft's Power BI Phone Report documentation</a> for more information on configuring phone layout on Power BI Desktop.</p>
-<h2 id="viewing-report-in-binokula">Viewing report in Binokula</h2>
+<h3 id="viewing-report-in-binokula">Viewing report in Binokula</h3>
 <p>Any new report published are by default not accessible to any users. Access to reports are controlled through report groups. To give yourself access to view a report, you will need to be an administrator and complete the following in Binokula:</p>
 <ol>
 <li>Import the report definition into Binokula by clicking on the refresh button in the reports administration page;</li>
@@ -478,9 +490,9 @@
 <li>Adding yourself as a user in the report group; and</li>
 <li>Selecting the report ing the Reports user page.</li>
 </ol>
-<h3 id="assigning-more-users-and-reports">Assigning more users and reports</h3>
+<h4 id="assigning-more-users-and-reports">Assigning more users and reports</h4>
 <p>The process is exactly the same as the previous step, all you have to do is add more users. If will be too time-consuming to add users by one-by-one, you can create a script to call Binokula REST API to add users in bulk. Please see the developer guide for details on the REST API. If you need to expose more than one report to a specific audience, multiple reports can also be added to a report group through the Report Group administration page.</p>
-<h2 id="automating-and-scheduling-the-refresh-of-report-data">Automating and scheduling the refresh of report data</h2>
+<h3 id="automating-and-scheduling-the-refresh-of-report-data">Automating and scheduling the refresh of report data</h3>
 <p>Refreshing data for Binokula reports is the same as any other Power BI report*. Any on-premise data used in the report needs to be supported by the Power BI On-Premise Data Gateway. The on-premise data gateway needs to be installed and configured with credentials of your unique publisher account. Cloud data sources also needs to be supported by the Power BI service. Additional information on Power BI's data refresh capabilities can be found here:</p>
 <ul>
 <li><a href="https://docs.microsoft.com/en-us/power-bi/refresh-data">Data refresh in Power BI</a></li>
@@ -508,7 +520,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href=".." title="Welcome to Binokula" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href=".." title="Welcome" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -517,13 +529,13 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Welcome to Binokula
+                Welcome
               </span>
             </div>
           </a>
         
         
-          <a href="../Developer Guide/" title="Developer Guide" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../developer-guide/" title="Developer Guide" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">

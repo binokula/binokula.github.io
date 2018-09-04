@@ -56,6 +56,8 @@
     
     <link rel="stylesheet" href="../assets/fonts/material-icons.css">
     
+      <link rel="stylesheet" href="https://unpkg.com/mermaid@7.1.2/dist/mermaid.css">
+    
     
   </head>
   
@@ -200,9 +202,125 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Developer Guide
+      </label>
+    
     <a href="./" title="Developer Guide" class="md-nav__link md-nav__link--active">
       Developer Guide
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#single-sign-on" title="Single-Sign On" class="md-nav__link">
+    Single-Sign On
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview" title="Overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoints" title="Endpoints" class="md-nav__link">
+    Endpoints
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#issuerenew-user-access-token" title="Issue/Renew User Access Token" class="md-nav__link">
+    Issue/Renew User Access Token
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redirect-to-binokula-external-access" title="(Redirect to) Binokula External Access" class="md-nav__link">
+    (Redirect to) Binokula External Access
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-management" title="User Management" class="md-nav__link">
+    User Management
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview_1" title="Overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoints_1" title="Endpoints" class="md-nav__link">
+    Endpoints
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#register-user" title="Register User" class="md-nav__link">
+    Register User
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -260,6 +378,109 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#single-sign-on" title="Single-Sign On" class="md-nav__link">
+    Single-Sign On
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview" title="Overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoints" title="Endpoints" class="md-nav__link">
+    Endpoints
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#issuerenew-user-access-token" title="Issue/Renew User Access Token" class="md-nav__link">
+    Issue/Renew User Access Token
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redirect-to-binokula-external-access" title="(Redirect to) Binokula External Access" class="md-nav__link">
+    (Redirect to) Binokula External Access
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-management" title="User Management" class="md-nav__link">
+    User Management
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview_1" title="Overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoints_1" title="Endpoints" class="md-nav__link">
+    Endpoints
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#register-user" title="Register User" class="md-nav__link">
+    Register User
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -272,7 +493,103 @@
                 
                 
                 <h1 id="developer-guide">Developer Guide <img alt="" src="../images/favicon.PNG" /></h1>
-<p>This section will document Binokula's REST API</p>
+<h3 id="introduction">Introduction</h3>
+<p>The Binokula API provides external applications the ability to access, edit or add objects related to the Binokula application. Current end-points focus on user management and access to reports. All API calls are secured with SSL, tenant names and API Keys (client_secret). If you need access to your client_secret, please contact <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#98;&#105;&#110;&#111;&#107;&#117;&#108;&#97;&#46;&#97;&#112;&#112;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#98;&#105;&#110;&#111;&#107;&#117;&#108;&#97;&#46;&#97;&#112;&#112;</a>.</p>
+<h3 id="single-sign-on">Single-Sign On</h3>
+<h4 id="overview">Overview</h4>
+<p>Single-Sign On (SSO) enables external applications to give users access to Binokula without the need for them to enter their Binokula password. Access to Binokula is gained with the combination of a user's email address and a securely generated access token. The access token is valid for one hour and can be refreshed using the API. Binokula will check if the users email is registered as a system user and if the access token is valid before granting access to the application. If authentication fails, a redirect to the Binokula login page will be executed. Only one user token can be active at any given time.</p>
+<div class="mermaid">sequenceDiagram
+    User-&gt;&gt;Organization App: User Requests access to Binokula
+    Organization App-&gt;&gt;Binokula API: App requests access_token from API
+    Binokula API-&gt;&gt;Organization App: App constructs SSO URL with token
+    Organization App-&gt;&gt;Binokula App: App opens Binokula App URL
+    Binokula App-&gt;&gt;Binokula App: If valid, Binokula reports are shown
+    Binokula App-&gt;&gt;Binokula App: If not valid, Binokula Login page is shown
+</div>
+
+<h4 id="endpoints">Endpoints</h4>
+<h5 id="issuerenew-user-access-token">Issue/Renew User Access Token</h5>
+<p><strong>URL:</strong> https://open4biapi.azurewebsites.net/api/Token</p>
+<p><strong>HTTP Verb:</strong> GET</p>
+<p><strong>Headers:</strong></p>
+<ul>
+<li>client_secret</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li>email</li>
+<li>tenant</li>
+<li>code<ul>
+<li>This is a function key provided to the customer to access this endpoint
+Response:</li>
+</ul>
+</li>
+</ul>
+<p>Status: 200 OK
+<div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;example@example.com&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;access_token&quot;</span><span class="p">:</span> <span class="s2">&quot;FbyIcycqczD6sT519Clgo2iNoW3wxXupT2uxRbUrGO8=&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;expiry_date&quot;</span><span class="p">:</span> <span class="s2">&quot;2018-04-26T03:08:03.893495+00:00&quot;</span>
+<span class="p">}</span>
+</pre></div></p>
+<h5 id="redirect-to-binokula-external-access">(Redirect to) Binokula External Access</h5>
+<p><strong>URL:</strong> https://binokula.app/Account/ExternalAccess</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li>email</li>
+<li>access_token</li>
+<li>tenant</li>
+</ul>
+<p><strong>Response:</strong></p>
+<ul>
+<li>Status: 200 OK</li>
+<li>Redirects to users Binokula homepage</li>
+</ul>
+<p><strong>Note:</strong> Credentials are URL encoded</p>
+<h3 id="user-management">User Management</h3>
+<h4 id="overview_1">Overview</h4>
+<p>The User Management API enables external applications to register and delete users to their Binokula account. This endpoint creates a user with an email and generates a secure password for the newly created user. The password is not known to the external application nor the registered user. To access this endpoint the external application must supply the API a valid client secret key along with tenant name.</p>
+<h4 id="endpoints_1">Endpoints</h4>
+<h5 id="register-user">Register User</h5>
+<p><strong>URL:</strong> https://open4biapi.azurewebsites.net/api/User</p>
+<p><strong>HTTP Verb:</strong> PUT</p>
+<p><strong>Headers:</strong></p>
+<ul>
+<li>client_secret</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li>email</li>
+<li>tenant</li>
+<li>code<ul>
+<li>This is a function key provided to the customer to access this endpoint</li>
+</ul>
+</li>
+</ul>
+<p><strong>Response:</strong></p>
+<ul>
+<li>Status: 200 OK</li>
+</ul>
+<div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;\&quot;Successfully registered example@example.com\&quot;&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>Delete User
+URL: https://open4biapi.azurewebsites.net/api/User</p>
+<p>HTTP Verb: Delete</p>
+<p>Headers:</p>
+<p>client_secret
+Parameters:</p>
+<p>email
+tenant
+code
+This is a function key provided to the customer to access this endpoint
+Response:</p>
+<p>Status: 200 OK</p>
+<p>{
+    "message": "\"Successfully removed example@example.com\""
+}</p>
                 
                   
                 
@@ -347,6 +664,8 @@
       <script src="../assets/javascripts/application.583bbe55.js"></script>
       
       <script>app.initialize({version:"1.0.3",url:{base:".."}})</script>
+      
+        <script src="https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js"></script>
       
     
     

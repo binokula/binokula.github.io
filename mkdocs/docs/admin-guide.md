@@ -1,4 +1,4 @@
-# Admin Guide
+# Admin Guide ![](../images/favicon.PNG)
 
 ###Getting Started
 This guide will take you through all the required steps for providing secure reporting to your stakeholder. This includes:

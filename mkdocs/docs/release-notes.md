@@ -1,4 +1,4 @@
-# Release Notes
+# Release Notes ![](../images/favicon.PNG)
 
 ###August 13, 2018
 ####New

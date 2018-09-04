@@ -1,6 +1,4 @@
 site_name: Binokula Docs
-docs_dir: docs_dir
-site_dir: docs
 theme:
     name: material
     

@@ -93,7 +93,7 @@ The User Management API enables external applications to register and delete use
 }
 ```
 
-####Delete User
+#####Delete User
 **URL:** https://open4biapi.azurewebsites.net/api/User
 
 **HTTP Verb:** Delete

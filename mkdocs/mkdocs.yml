@@ -1,4 +1,13 @@
-site_name: Binokula Docs
+site_name: Binokula Documentation
 theme:
     name: material
+    custom_dir: theme
+    logo: 'images/logo.png'
+nav:
+    - 'Welcome': 'index.md'
+    - 'Admin Guide': 'admin-guide.md'
+    - 'Developer Guide': 'developer-guide.md'
+    - 'User Guide': 'user-guide.md'
+    - 'Release Notes': 'release-notes.md'
+    - 'FAQ': 'faq.md'
     

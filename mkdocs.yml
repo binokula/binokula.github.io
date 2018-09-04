@@ -1,1 +1,4 @@
-site_name: My Docs
+site_name: Binokula Docs
+theme:
+    name: material
+    custom_dir: 'theme'

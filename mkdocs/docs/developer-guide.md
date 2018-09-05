@@ -1,4 +1,4 @@
-# Developer Guide ![](../images/favicon.PNG)
+# Developer Guide ![](images/favicon.png)
 
 ###Introduction
 The Binokula API provides external applications the ability to access, edit or add objects related to the Binokula application. Current end-points focus on user management and access to reports. All API calls are secured with SSL, tenant names and API Keys (client_secret). If you need access to your client_secret, please contact <support@binokula.app>.

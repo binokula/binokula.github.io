@@ -1,4 +1,4 @@
-# Welcome to Binokula ![](./images/favicon.PNG)
+# Welcome to Binokula ![](images/favicon.png)
 
 ###**Get reports to your business affiliates, securely, easily and quickly.**
 

@@ -1,7 +1,7 @@
 # FAQ ![](images/favicon.png)
 
 ###How do I publish reports in Binokula?
-Binokula reports are build in Microsoft Power BI Desktop and published to a dedicated tenant for your orgnization. In order to access your tenant, you would have received details of a dedicated publisher account.
+Binokula reports are build in Microsoft Power BI Desktop and published to a dedicated tenant for your organization. This tenant is created and managed by Binokula. In order to access your tenant, you would have received details of a dedicated publisher account.
 
 ###How do I access my Binokula account?
 

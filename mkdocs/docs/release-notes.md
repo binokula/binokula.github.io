@@ -14,7 +14,7 @@
 * Home page supports tenant lookups. Enter your email address and you will be directed to your tenant automatically. Check it out by going to https://Binokula.app
 ####Enhancements
 * Email with hyphens now supported as a valid email address.
-* Improved backend monitoring and error notifications for our sysadmins. If an error occurs we'll know about it.
+* Improved back-end monitoring and error notifications for our sysadmins. If an error occurs we'll know about it.
 
 ###July 12, 2018
 ####New

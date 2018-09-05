@@ -14,11 +14,11 @@ A Binokula Tenant is your dedicated area for publishing, hosting and managing ac
 
 If you are an organization who wishes to get a trial tenant, please contact <sales@binokula.com>.
 
-If you are expecting to already have access to reports in Binokula, you can enter your email address at <https://binokula.app> or contact the orgnization whose report content you wish to access.
+If you are expecting to already have access to reports in Binokula, you can enter your email address at <https://binokula.app> or contact the organization whose report content you wish to access.
 
 ###Building and Publishing Reports
 ####Building a Report without RLS
-Binokula uses Microsoft Power BI as its report building tool. For a report to be correctly published in Binokula, the report has to adhere to the following prequisites:
+Binokula uses Microsoft Power BI as its report building tool. For a report to be correctly published in Binokula, the report has to adhere to the following prerequisites:
 
 * Must have a security role called "User_Security" in the Power BI Model.
 <details>
@@ -83,7 +83,7 @@ Once you have have built and tested your Power BI report, the next step is to pu
 + Choosing "binokula" as the destination before clicking "Select"
 
 Note:
-> * Save the report with a friendly name that you would wnat your users to see. Try to avoid something abbreviations and version numbers like "test_fin_HL_V0.13".
+> * Save the report with a friendly name that you would want your users to see. Try to avoid something abbreviations and version numbers like "test_fin_HL_V0.13".
 > * Editing an existing report can be done by re-publishing the same report from Power BI Desktop. Select Yes when prompted to overwrite the dataset.
 > * Another way to edit an existing report is by making changes on powerbi.com with your publisher account. Re-publishing from Power BI Desktop will override these changes.
 

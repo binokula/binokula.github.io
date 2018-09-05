@@ -21,7 +21,7 @@ sequenceDiagram
 
 ####Endpoints
 #####Issue/Renew User Access Token
-**URL:** https://open4biapi.azurewebsites.net/api/Token
+**URL:** https://api.binokula.app/api/Token
 
 **HTTP Verb:** GET
 
@@ -68,7 +68,7 @@ The User Management API enables external applications to register and delete use
 
 ####Endpoints
 #####Register User
-**URL:** https://open4biapi.azurewebsites.net/api/User
+**URL:** https://api.binokula.app/api/User
 
 **HTTP Verb:** PUT
 
@@ -94,7 +94,7 @@ The User Management API enables external applications to register and delete use
 ```
 
 #####Delete User
-**URL:** https://open4biapi.azurewebsites.net/api/User
+**URL:** https://api.binokula.app/api/User
 
 **HTTP Verb:** Delete
 

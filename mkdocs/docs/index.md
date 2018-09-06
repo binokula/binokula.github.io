@@ -3,12 +3,14 @@
 ###**Get reports to your business affiliates, securely, easily and quickly.**
 
 ###What is Binokula?
-Binokula is a report sharing website which makes it possible for organization's to securely share reports with their business affiliates. Examples of affiliates are customers, suppliers, subsidiaries, dealers, franchisees, brokers, agents, frontline workers etc. Binokula attempts to address most of the problems associated with secure report sharing. Once you have a Binokula tenant for your organization, you will be able to:
+Binokula is a report sharing website which provides an organization with the power to *securely share reports* with their business affiliates. Affiliates such as customers, suppliers, subsidiaries, dealers, franchisees, brokers, agents, frontline workers and countless other business associates or partners.
 
-* Expose secure, interactive reports using Microsoft's Power BI.
-* Seamlessly integrate Binokula with any existing portal you already have.
-* Allow users to access their reports and data, **and only their reports and data**.
-* Scale to thousands of users without being concerned how they will be licensed.
-* See when users access their reports.
-* Change existing reports or add new reports without the need of a software developer.
-* Automate the entire process, while knowing that we constantly monitor the platform for you.
+Binokula attempts to address most of the common problems associated with secure report sharing. Once you have a Binokula tenant for your organization, you will be able to:
+
+* *Easily* expose secure, interactive reports using Microsoft Power BI.
+* Seamlessly integrate Binokula with your existing portal.
+* Restrict users access to only their reports and data.
+* Scale out to thousands of licensed users.
+* Track when users access their reports.
+* *Quickly* publish new reports or change existing reports, all without the need of a software developer.
+* Automate the entire process, while knowing that Binokula constantly monitors the platform for you.

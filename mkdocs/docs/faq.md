@@ -27,7 +27,7 @@ Binokula will likely be a good fit for you if
     * your users to have Azure Active Directory or Microsoft accounts
     * to purchase Power BI Pro licenses or Power BI Premium
     * to start a software development project to integrate Power BI into your existing portal
-* OR **you do want** 
+* **you do want** 
     * to leverage existing Power BI skills within your organization
     * to simplify portal integration to a single API call
     * to minimize the risk of users seeing each other's email address or access data they couldn't

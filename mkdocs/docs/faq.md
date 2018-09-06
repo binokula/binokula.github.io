@@ -19,15 +19,15 @@ It depends, Power BI is a terrific product but isn't an ideal fit if you want to
 * **Portal Integration** - If you already provide a portal for your users and you wish to integrate powerbi.com reports, you are left with 2 choices:
     1. Provide a link to a report URL and expect users to authenticate with their Azure AD or Microsoft account.
     + Commission your portal developers to use Power BI embedded and present reports from your portal.
-* **Risk** - If you are getting multiple external users onto powerbi.com, you have to take in configuring access to reports, workspaces, apps and tenant settings to ensure users can't accidentally break something, users can't see each other's email address, users can't access data accidentally see data they shouldn't.
+* **Risk** - If you are getting multiple external users onto powerbi.com, you have to manage access to reports, workspaces, apps and tenant settings to ensure users can't accidentally break something, can't see each other's email address or can't access data accidentally see data they should not be able to.
 
-Binokula will likely be a good fit for you if 
+Binokula will likely be a good fit for you if:
 
 * **you don't want**:
     * your users to have Azure Active Directory or Microsoft accounts
     * to purchase Power BI Pro licenses or Power BI Premium
     * to start a software development project to integrate Power BI into your existing portal
-* OR **you do want** 
+* **OR you do want** 
     * to leverage existing Power BI skills within your organization
     * to simplify portal integration to a single API call
     * to minimize the risk of users seeing each other's email address or access data they couldn't

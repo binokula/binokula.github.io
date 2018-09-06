@@ -21,15 +21,16 @@ It depends, Power BI is a terrific product but isn't an ideal fit if you want to
     + Commission your portal developers to use Power BI embedded and present reports from your portal.
 * **Risk** - If you are getting multiple external users onto powerbi.com, you have to take in configuring access to reports, workspaces, apps and tenant settings to ensure users can't accidentally break something, users can't see each other's email address, users can't access data accidentally see data they shouldn't.
 
-Binokula will like be a good fit for you if:
+Binokula will likely be a good fit for you if 
 
-* **you don't want** your users to have Azure Active Directory or Microsoft accounts
-* **you don't want** to purchase Power BI Pro licenses or Power BI Premium
-* **you don't want** to start a software development project to integrate Power BI into your existing portal
-* **you do want** to leverage existing Power BI skills within your organization
-* **you do want** a managed cloud solution for report sharing
-* **you do want** to simplify portal integration to a single API call
-* **you do want** to minimize the risk of users seeing each other's email address or access data they couldn't
+* **you don't want**:
+    * your users to have Azure Active Directory or Microsoft accounts
+    * to purchase Power BI Pro licenses or Power BI Premium
+    * to start a software development project to integrate Power BI into your existing portal
+* OR **you do want** 
+    * to leverage existing Power BI skills within your organization
+    * to simplify portal integration to a single API call
+    * to minimize the risk of users seeing each other's email address or access data they couldn't
 
 ###How do I get reports into Binokula?
 Binokula reports are build in Microsoft Power BI Desktop and published to a dedicated tenant for your organization. Publishing is explained in [Building and Publishing Reports section in the Admin Guide.](../admin-guide/#building-and-publishing-reports)

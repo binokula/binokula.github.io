@@ -7,7 +7,7 @@ Binokula is a report sharing website which makes it possible for organization's 
 
 * Expose secure, interactive reports using Microsoft's Power BI.
 * Seamlessly integrate Binokula with any existing portal you already have.
-* Allow users to access their reports and date AND ONLY THEIR REPORTS AND DATA.
+* Allow users to access their reports and data, **and only their reports and data**.
 * Scale to thousands of users without being concerned how they will be licensed.
 * See when users access their reports.
 * Change existing reports or add new reports without the need of a software developer.

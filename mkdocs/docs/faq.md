@@ -26,10 +26,10 @@ Binokula will like be a good fit for you if:
 * **you don't want** your users to have Azure Active Directory or Microsoft accounts
 * **you don't want** to purchase Power BI Pro licenses or Power BI Premium
 * **you don't want** to start a software development project to integrate Power BI into your existing portal
-* **you do** want to leverage existing Power BI skills within your organization
-* **you do** want a managed cloud solution for report sharing
-* **you do** want to simplify portal integration to a single API call
-* **you do** want to minimize the risk of users seeing each other's email address or access data they couldn't
+* **you do want** to leverage existing Power BI skills within your organization
+* **you do want** a managed cloud solution for report sharing
+* **you do want** to simplify portal integration to a single API call
+* **you do want** to minimize the risk of users seeing each other's email address or access data they couldn't
 
 ###How do I get reports into Binokula?
 Binokula reports are build in Microsoft Power BI Desktop and published to a dedicated tenant for your organization. Publishing is explained in [Building and Publishing Reports section in the Admin Guide.](../admin-guide/#building-and-publishing-reports)

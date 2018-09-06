@@ -257,8 +257,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#how-do-i-publish-reports-in-binokula" title="How do I publish reports in Binokula?" class="md-nav__link">
-    How do I publish reports in Binokula?
+  <a href="#why-should-i-use-binokula" title="Why should I use Binokula?" class="md-nav__link">
+    Why should I use Binokula?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cant-i-just-use-power-bi-to-share-reports" title="Can't I just use Power BI to share reports?" class="md-nav__link">
+    Can't I just use Power BI to share reports?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-get-reports-into-binokula" title="How do I get reports into Binokula?" class="md-nav__link">
+    How do I get reports into Binokula?
   </a>
   
 </li>
@@ -273,20 +287,6 @@
         <li class="md-nav__item">
   <a href="#what-happens-if-i-dont-know-how-to-use-power-bi" title="What happens if I don't know how to use Power BI?" class="md-nav__link">
     What happens if I don't know how to use Power BI?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-rls-row-level-security" title="What is RLS (Row-Level Security)?" class="md-nav__link">
-    What is RLS (Row-Level Security)?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-a-report-group-in-binokula" title="What is a report group in Binokula?" class="md-nav__link">
-    What is a report group in Binokula?
   </a>
   
 </li>
@@ -323,8 +323,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#how-do-i-publish-reports-in-binokula" title="How do I publish reports in Binokula?" class="md-nav__link">
-    How do I publish reports in Binokula?
+  <a href="#why-should-i-use-binokula" title="Why should I use Binokula?" class="md-nav__link">
+    Why should I use Binokula?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cant-i-just-use-power-bi-to-share-reports" title="Can't I just use Power BI to share reports?" class="md-nav__link">
+    Can't I just use Power BI to share reports?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-get-reports-into-binokula" title="How do I get reports into Binokula?" class="md-nav__link">
+    How do I get reports into Binokula?
   </a>
   
 </li>
@@ -339,20 +353,6 @@
         <li class="md-nav__item">
   <a href="#what-happens-if-i-dont-know-how-to-use-power-bi" title="What happens if I don't know how to use Power BI?" class="md-nav__link">
     What happens if I don't know how to use Power BI?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-rls-row-level-security" title="What is RLS (Row-Level Security)?" class="md-nav__link">
-    What is RLS (Row-Level Security)?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-a-report-group-in-binokula" title="What is a report group in Binokula?" class="md-nav__link">
-    What is a report group in Binokula?
   </a>
   
 </li>
@@ -375,12 +375,51 @@
                 
                 
                 <h1 id="faq">FAQ <img alt="" src="../images/favicon.png" /></h1>
-<h3 id="how-do-i-publish-reports-in-binokula">How do I publish reports in Binokula?</h3>
-<p>Binokula reports are build in Microsoft Power BI Desktop and published to a dedicated tenant for your organization. This tenant is created and managed by Binokula on your behalf. In order to access your tenant, you would have received details of a dedicated publisher account.</p>
+<h3 id="why-should-i-use-binokula">Why should I use Binokula?</h3>
+<p>Securely providing access to interactive reports to people outside your organization is a surprisingly difficult problem to solve. You can either try to develop your own reporting portal and worry about how long it will take to develop and how much it will cost. Or you can purchase a solution and encounter some of the following issues:</p>
+<ol>
+<li>User licenses need to be paid, even if they don't access the reports.</li>
+<li>It is not possible to implement the solution without turning it into a large IT project.</li>
+<li>It is not possible to stop users from "finding" each other within the application.</li>
+<li>Software developers are required every time you need any changes to reports or add new reports.</li>
+<li>It is not possible to secure access to reports or data within reports.</li>
+<li>It is not possible provide interactive reporting.</li>
+</ol>
+<p>Binokula sets out to address these issues head on by wrapping an easy-to-use service around Microsoft's Power BI. We try to make secure report sharing as easy as possible.</p>
+<h3 id="cant-i-just-use-power-bi-to-share-reports">Can't I just use Power BI to share reports?</h3>
+<p>It depends, Power BI is a terrific product but isn't an ideal fit if you want to share reports externally. Most of our customers already used Power BI for their internal business analytics and have considered it for external report sharing.  They typically <strong>encountered the following issues before adopting Binokula</strong>:</p>
+<ul>
+<li><strong>Licensing</strong> - If you decide to share reports from powerbi.com, each external user needs to be licensed with a Power BI Pro license and their account needs to be either an Azure Active Directory (AD) account or a Microsoft Account. Power BI Premium avoids the need to purchase Pro licenses but users are still required to have an Azure Active Directory account or Microsoft account.</li>
+<li><strong>Portal Integration</strong> - If you already provide a portal for your users and you wish to integrate powerbi.com reports, you are left with 2 choices:<ol>
+<li>Provide a link to a report URL and expect users to authenticate with their Azure AD or Microsoft account.</li>
+<li>Commission your portal developers to use Power BI embedded and present reports from your portal.</li>
+</ol>
+</li>
+<li><strong>Risk</strong> - If you are getting multiple external users onto powerbi.com, you have to take in configuring access to reports, workspaces, apps and tenant settings to ensure users can't accidentally break something, users can't see each other's email address, users can't access data accidentally see data they shouldn't.</li>
+</ul>
+<p>Binokula will like be a good fit for you if:</p>
+<ul>
+<li><strong>you don't want</strong> your users to have Azure Active Directory or Microsoft accounts</li>
+<li><strong>you don't want</strong> to purchase Power BI Pro licenses or Power BI Premium</li>
+<li><strong>you don't want</strong> to start a software development project to integrate Power BI into your existing portal</li>
+<li><strong>you do</strong> want to leverage existing Power BI skills within your organization</li>
+<li><strong>you do</strong> want a managed cloud solution for report sharing</li>
+<li><strong>you do</strong> want to simplify portal integration to a single API call</li>
+<li><strong>you do</strong> want to minimize the risk of users seeing each other's email address or access data they couldn't</li>
+</ul>
+<h3 id="how-do-i-get-reports-into-binokula">How do I get reports into Binokula?</h3>
+<p>Binokula reports are build in Microsoft Power BI Desktop and published to a dedicated tenant for your organization. Publishing is explained in <a href="../admin-guide/#building-and-publishing-reports">Building and Publishing Reports section in the Admin Guide.</a></p>
 <h3 id="how-do-i-access-my-binokula-account">How do I access my Binokula account?</h3>
+<p>Your Binokula account is managed by a Binokula provider. If you know that you should have a login to Binokula, then see the <a href="../user-guide/#getting-started">Getting Started section in the User Guide.</a></p>
 <h3 id="what-happens-if-i-dont-know-how-to-use-power-bi">What happens if I don't know how to use Power BI?</h3>
-<h3 id="what-is-rls-row-level-security">What is RLS (Row-Level Security)?</h3>
-<h3 id="what-is-a-report-group-in-binokula">What is a report group in Binokula?</h3>
+<ul>
+<li>
+<p><strong>Report Viewers</strong> - Report viewers in Binokula don't need to know Power BI at all. All you need to do is login to your account and view the reports assigned to you.</p>
+</li>
+<li>
+<p><strong>Report Builders</strong> - If you are a Binokula provider then you will need to learn the basics of Power BI. There are numerous free resources on the internet to get started. Binokula requires Power BI reports to be built in a specific manner. This is explained in <a href="../admin-guide/#building-and-publishing-reports">Building and Publishing Reports section in the Admin Guide.</a></p>
+</li>
+</ul>
                 
                   
                 

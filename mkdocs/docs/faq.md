@@ -1,6 +1,6 @@
 # FAQ ![](images/favicon.png)
 
-###Why should I use Binokula?
+###Why should I use Binokula for report sharing?
 Securely providing access to interactive reports to people outside your organization is a surprisingly difficult problem to solve. You can either try to develop your own reporting portal and worry about how long it will take to develop and how much it will cost. Or you can purchase a solution and encounter some of the following issues:
 
 1. User licenses need to be paid, even if they don't access the reports.
@@ -13,7 +13,7 @@ Securely providing access to interactive reports to people outside your organiza
 Binokula sets out to address these issues head on by wrapping an easy-to-use service around Microsoft's Power BI. We try to make secure report sharing as easy as possible.
 
 ###Can't I just use Power BI to share reports?
-It depends, Power BI is a terrific product but isn't an ideal fit if you want to share reports externally. Most of our customers already used Power BI for their internal business analytics and have considered it for external report sharing.  They typically **encountered the following issues before adopting Binokula**:
+It depends, Power BI is a terrific product but isn't an ideal fit if you want to share reports externally. Most of our customers already used Power BI for their internal business analytics. They typically **encountered the following issues when they considered Power BI for external report sharing**:
 
 * **Licensing** - If you decide to share reports from powerbi.com, each external user needs to be licensed with a Power BI Pro license and their account needs to be either an Azure Active Directory (AD) account or a Microsoft Account. Power BI Premium avoids the need to purchase Pro licenses but users are still required to have an Azure Active Directory account or Microsoft account.
 * **Portal Integration** - If you already provide a portal for your users and you wish to integrate powerbi.com reports, you are left with 2 choices:

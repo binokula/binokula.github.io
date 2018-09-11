@@ -6,7 +6,7 @@
 * The API also allows for the enabling or disabling of users.
 * Binokula Documentation is live and hosted on <https://binokula.github.io>. The release notes have also been moved to the documentation section.
 ####Enhancements
-* SSO API has optional existingusersonly parameter added. Can be used to stop users from being auto-created.
+* SSO API has optional existingusersonly parameter added. This can be used to stop users from being auto-created.
 * The noreply password reset email domain has been changed to binokula.com.
 
 ###August 13, 2018

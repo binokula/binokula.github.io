@@ -21,7 +21,7 @@ sequenceDiagram
 
 ####Endpoints
 #####Issue/Renew User Access Token
-**URL:** https://api.binokula.app/api/Token
+**URL:** <https://api.binokula.app/api/Token>
 
 **HTTP Verb:** GET
 
@@ -33,6 +33,7 @@ sequenceDiagram
 
 * email
 * tenant
+* existingusersonly - optional detault set to "false". When "true" a valid token is only generated for existing users. Can be used to stop users from being auto-created.
 * code
     * This is a function key provided to the customer to access this endpoint
 Response:
@@ -47,7 +48,7 @@ Status: 200 OK
 ```
 
 #####(Redirect to) Binokula External Access
-**URL:** https://binokula.app/Account/ExternalAccess
+**URL:** <https://binokula.app/Account/ExternalAccess>
 
 **Parameters:**
 
@@ -64,11 +65,11 @@ Status: 200 OK
 
 ###User Management
 ####Overview
-The User Management API enables external applications to register and delete users to their Binokula account. This endpoint creates a user with an email and generates a secure password for the newly created user. The password is not known to the external application nor the registered user. To access this endpoint the external application must supply the API a valid client secret key along with tenant name.
+The User Management API enables external applications to register, delete, enable or disable users to their Binokula tenant. This register endpoint creates a user with an email and generates a secure password for the newly created user. The password is not known to the external application nor the registered user. To access this endpoint the external application must supply the API a valid client secret key along with tenant name.
 
 ####Endpoints
 #####Register User
-**URL:** https://api.binokula.app/api/User
+**URL:** <https://api.binokula.app/api/User>
 
 **HTTP Verb:** PUT
 
@@ -94,7 +95,7 @@ The User Management API enables external applications to register and delete use
 ```
 
 #####Delete User
-**URL:** https://api.binokula.app/api/User
+**URL:** <https://api.binokula.app/api/User>
 
 **HTTP Verb:** Delete
 
@@ -116,5 +117,32 @@ The User Management API enables external applications to register and delete use
 ```json
 {
     "message": "\"Successfully removed example@example.com\""
+}
+```
+
+#####Enable/Disable User
+**URL:** <https://api.binokula.app/api/UserStatus>
+
+**HTTP Verb:** Post
+
+**Headers:**
+
+* client_secret
+
+**Parameters:**
+
+* email
+* tenant
+* status ("true" - enables user/"false" - disables user)
+* code
+    * This is a function key provided to the customer to access this endpoint
+
+**Response:**
+
+* Status: 200 OK
+
+```json
+{
+    "message": "\"User Status set to true/false\""
 }
 ```

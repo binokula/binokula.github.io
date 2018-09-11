@@ -1,5 +1,14 @@
 # Release Notes ![](images/favicon.png)
 
+###September 11, 2018
+####New
+* Users can now be Enabled or Disabled in the User Management section. The next release will incorporate an auto-disable feature for inactive users for administrators that wish to use this feature.
+* The API also allows for the enabling or disabling of users.
+* Binokula Documentation is live and hosted on <https://binokula.github.io>. The release notes have also been moved to the documentation section.
+####Enhancements
+* SSO API has optional existingusersonly parameter added. Can be used to stop users from being auto-created.
+* The noreply password reset email domain has been changed to binokula.com.
+
 ###August 13, 2018
 ####New
 * Azure AD SSO Integration. If your company uses Azure AD, you should be able to authenticate automatically. We will continue to streamline this process as part of our next release

@@ -122,3 +122,25 @@ Refreshing data for Binokula reports is the same as any other Power BI report*. 
 *The Power BI Data Model still needs to have the "User_Security" role created in Power BI Desktop.
 
 Once you have a on-premise data gateway configured, you can access [powerbi.com](https://powerbi.com) with your assigned publisher account and [configure the schedule refresh as per the Power BI Documentation](https://docs.microsoft.com/en-us/power-bi/refresh-scheduled-refresh).
+
+###Managing Users
+User Management is done through the [user management link](https://binokula.app/Admin/Users) in the admin portal. This interface will allow you to:
+
+* [Add new users](https://binokula.app/Admin/AddUser)
+* Delete users
+* Enable/disable users
+* Enable/disable admins
+* Reset passwords
+<details>
+  <summary>
+    User management functions
+  </summary>
+  ![alt text](images/admin-guide/user_functions.PNG "User management functions")
+</details>
+
+Note:
+> * Users are automatically added when programmtically signed in with the [single-sign-on API](../developer-guide/#single-sign-on).
+> * Bulk adding, deleting, enabling or disabling more than one user at a time can be achieved programmtically by calling the [User Management API](../developer-guide/#user-management).
+
+
+

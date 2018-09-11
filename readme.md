@@ -19,7 +19,7 @@ In commenad prompt Navigate to mkdocs folder and run "mkdocs server"
 # To build
 Run mkdocs/build.bat
 
-# License
+# 0License
 This project is licensed under the terms of the MIT license.
 
 

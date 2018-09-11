@@ -311,6 +311,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#enabledisable-user" title="Enable/Disable User" class="md-nav__link">
+    Enable/Disable User
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -479,6 +486,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#enabledisable-user" title="Enable/Disable User" class="md-nav__link">
+    Enable/Disable User
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -523,7 +537,7 @@
 
 <h4 id="endpoints">Endpoints</h4>
 <h5 id="issuerenew-user-access-token">Issue/Renew User Access Token</h5>
-<p><strong>URL:</strong> https://api.binokula.app/api/Token</p>
+<p><strong>URL:</strong> <a href="https://api.binokula.app/api/Token">https://api.binokula.app/api/Token</a></p>
 <p><strong>HTTP Verb:</strong> GET</p>
 <p><strong>Headers:</strong></p>
 <ul>
@@ -533,6 +547,7 @@
 <ul>
 <li>email</li>
 <li>tenant</li>
+<li>existingusersonly - optional detault set to "false". When "true" a valid token is only generated for existing users. Can be used to stop users from being auto-created.</li>
 <li>code<ul>
 <li>This is a function key provided to the customer to access this endpoint
 Response:</li>
@@ -547,7 +562,7 @@ Response:</li>
 <span class="p">}</span>
 </pre></div></p>
 <h5 id="redirect-to-binokula-external-access">(Redirect to) Binokula External Access</h5>
-<p><strong>URL:</strong> https://binokula.app/Account/ExternalAccess</p>
+<p><strong>URL:</strong> <a href="https://binokula.app/Account/ExternalAccess">https://binokula.app/Account/ExternalAccess</a></p>
 <p><strong>Parameters:</strong></p>
 <ul>
 <li>email</li>
@@ -562,10 +577,10 @@ Response:</li>
 <p><strong>Note:</strong> Credentials are URL encoded</p>
 <h3 id="user-management">User Management</h3>
 <h4 id="overview_1">Overview</h4>
-<p>The User Management API enables external applications to register and delete users to their Binokula account. This endpoint creates a user with an email and generates a secure password for the newly created user. The password is not known to the external application nor the registered user. To access this endpoint the external application must supply the API a valid client secret key along with tenant name.</p>
+<p>The User Management API enables external applications to register, delete, enable or disable users to their Binokula tenant. This register endpoint creates a user with an email and generates a secure password for the newly created user. The password is not known to the external application nor the registered user. To access this endpoint the external application must supply the API a valid client secret key along with tenant name.</p>
 <h4 id="endpoints_1">Endpoints</h4>
 <h5 id="register-user">Register User</h5>
-<p><strong>URL:</strong> https://api.binokula.app/api/User</p>
+<p><strong>URL:</strong> <a href="https://api.binokula.app/api/User">https://api.binokula.app/api/User</a></p>
 <p><strong>HTTP Verb:</strong> PUT</p>
 <p><strong>Headers:</strong></p>
 <ul>
@@ -590,7 +605,7 @@ Response:</li>
 </pre></div>
 
 <h5 id="delete-user">Delete User</h5>
-<p><strong>URL:</strong> https://api.binokula.app/api/User</p>
+<p><strong>URL:</strong> <a href="https://api.binokula.app/api/User">https://api.binokula.app/api/User</a></p>
 <p><strong>HTTP Verb:</strong> Delete</p>
 <p><strong>Headers:</strong></p>
 <ul>
@@ -611,6 +626,32 @@ Response:</li>
 </ul>
 <div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;\&quot;Successfully removed example@example.com\&quot;&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+<h5 id="enabledisable-user">Enable/Disable User</h5>
+<p><strong>URL:</strong> <a href="https://api.binokula.app/api/UserStatus">https://api.binokula.app/api/UserStatus</a></p>
+<p><strong>HTTP Verb:</strong> Post</p>
+<p><strong>Headers:</strong></p>
+<ul>
+<li>client_secret</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li>email</li>
+<li>tenant</li>
+<li>status ("true" - enables user/"false" - disables user)</li>
+<li>code<ul>
+<li>This is a function key provided to the customer to access this endpoint</li>
+</ul>
+</li>
+</ul>
+<p><strong>Response:</strong></p>
+<ul>
+<li>Status: 200 OK</li>
+</ul>
+<div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;\&quot;User Status set to true/false\&quot;&quot;</span>
 <span class="p">}</span>
 </pre></div>
                 

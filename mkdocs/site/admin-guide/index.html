@@ -297,6 +297,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#managing-users" title="Managing Users" class="md-nav__link">
+    Managing Users
+  </a>
+  
+</li>
+      
       
       
       
@@ -465,6 +472,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#managing-users" title="Managing Users" class="md-nav__link">
+    Managing Users
+  </a>
+  
+</li>
+      
       
       
       
@@ -603,6 +617,28 @@ Any report you view now be secured for the specific user.</li>
 </ul>
 <p>*The Power BI Data Model still needs to have the "User_Security" role created in Power BI Desktop.</p>
 <p>Once you have a on-premise data gateway configured, you can access <a href="https://powerbi.com">powerbi.com</a> with your assigned publisher account and <a href="https://docs.microsoft.com/en-us/power-bi/refresh-scheduled-refresh">configure the schedule refresh as per the Power BI Documentation</a>.</p>
+<h3 id="managing-users">Managing Users</h3>
+<p>User Management is done through the <a href="https://binokula.app/Admin/Users">user management link</a> in the admin portal. This interface will allow you to:</p>
+<ul>
+<li><a href="https://binokula.app/Admin/AddUser">Add new users</a></li>
+<li>Delete users</li>
+<li>Enable/disable users</li>
+<li>Enable/disable admins</li>
+<li>Reset passwords
+<details>
+  <summary>
+    User management functions
+  </summary>
+  <img alt="alt text" src="../images/admin-guide/user_functions.PNG" title="User management functions" />
+</details></li>
+</ul>
+<p>Note:</p>
+<blockquote>
+<ul>
+<li>Users are automatically added when programmtically signed in with the <a href="../developer-guide/#single-sign-on">single-sign-on API</a>.</li>
+<li>Bulk adding, deleting, enabling or disabling more than one user at a time can be achieved programmtically by calling the <a href="../developer-guide/#user-management">User Management API</a>.</li>
+</ul>
+</blockquote>
                 
                   
                 

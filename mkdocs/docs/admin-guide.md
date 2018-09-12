@@ -10,7 +10,7 @@ This guide will take you through all the required steps for providing secure rep
 
 
 ###Getting a Binokula Tenant
-A Binokula Tenant is your dedicated area for publishing, hosting and managing access to your report content. Only organizations who wish to share and control access to report need a tenant. If you are expecting to just access reports in Binokula, you will need to be added as a user on a tenant.
+A Binokula Tenant is your dedicated area for publishing, hosting and managing access to your report content. Only organizations who wish to share and control access to reports need a tenant. If you are expecting to just access reports in Binokula, you will need to be added as a user on a tenant.
 
 If you are an organization who wishes to get a trial tenant, please contact <sales@binokula.com>.
 
@@ -18,6 +18,9 @@ If you are expecting to already have access to reports in Binokula, you can ente
 
 ###Building and Publishing Reports
 ####Building a Report without RLS
+
+> * RLS - Row-Level Security ensure reports are secured so that users only see the data they are allowed to see.
+
 Binokula uses Microsoft Power BI as its report building tool. For a report to be correctly published in Binokula, the report has to adhere to the following prerequisites:
 
 * Must have a security role called "User_Security" in the Power BI Model.
@@ -62,7 +65,7 @@ Building a report with RLS requires the report to adhere to the following prereq
 </details>
 
 ####Testing Power BI RLS
-Once you have configure the RLS as shown above, you can test the security by impersonating a user. This is done by:
+Once you have configured the RLS as shown above, you can test the security by impersonating a user. This is done by:
 
 1. Click "View as Roles" in Power BI Desktop;
 + Tick "Other User" and enter the test user's email address; and
@@ -76,19 +79,19 @@ Once you have configure the RLS as shown above, you can test the security by imp
 Any report you view now be secured for the specific user.
 
 ####Publishing Power BI Reports
-Once you have have built and tested your Power BI report, the next step is to publish the report to your dedicated tenant. This is done with the unique publisher account, whose details you would have received as part of requesting your Binokula tenant. You can sign-in with the publisher account by clicking on "Sign in" in Power BI Desktop. If you are already signed in with a different account, click on the account name and select "Switch account". Once you are signed in, you can publish the report by:
+Once you have built and tested your Power BI report, the next step is to publish the report to your dedicated tenant. This is done with the unique publisher account, whose details you would have received as part of requesting your Binokula tenant. You can sign-in with the publisher account by clicking on "Sign in" in Power BI Desktop. If you are already signed in with a different account, click on the account name and select "Switch account". Once you are signed in, you can publish the report by:
 
 1. Saving any changes;
 + Clicking on the "Publish" button on the Home menu; and 
 + Choosing "binokula" as the destination before clicking "Select"
 
 Note:
-> * Save the report with a friendly name that you would want your users to see. Try to avoid something abbreviations and version numbers like "test_fin_HL_V0.13".
+> * Save the report with a friendly name that you would want your users to see. Try to avoid names with abbreviations and version numbers like "test_fin_HL_V0.13".
 > * Editing an existing report can be done by re-publishing the same report from Power BI Desktop. Select Yes when prompted to overwrite the dataset.
 > * Another way to edit an existing report is by making changes on powerbi.com with your publisher account. Re-publishing from Power BI Desktop will override these changes.
 
 ####Report for Mobile Viewing
-Power BI Mobile support are supported by Binokula. All you need to do is create the mobile view of a report in the Power BI Desktop file and publish it to your tenant. Please see [Microsoft's Power BI Phone Report documentation](https://docs.microsoft.com/en-us/power-bi/desktop-create-phone-report) for more information on configuring phone layout on Power BI Desktop.
+Power BI Mobile support is supported by Binokula. All you need to do is create the mobile view of a report in the Power BI Desktop file and publish it to your tenant. Please see [Microsoft's Power BI Phone Report documentation](https://docs.microsoft.com/en-us/power-bi/desktop-create-phone-report) for more information on configuring phone layout on Power BI Desktop.
 <details>
   <summary>
     Show Phone Layout option in Power BI Desktop
@@ -98,7 +101,7 @@ Power BI Mobile support are supported by Binokula. All you need to do is create 
 
 
 ###Managing access to reports in Binokula
-Any new report published are by default not accessible to any users. Access to reports are controlled through report groups. To give yourself access to view a report, you will need to be an administrator and complete the following in Binokula:
+Any new reports published are by default not accessible to any users. Access to reports are controlled through report groups. To give yourself access to view a report, you will need to be an administrator and complete the following in Binokula:
 
 1. Import the report definition into Binokula by clicking on the refresh button in the reports administration page;
 + Creating a new Report Group in the report group administration page;

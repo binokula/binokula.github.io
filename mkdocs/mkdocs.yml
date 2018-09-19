@@ -15,7 +15,7 @@ theme:
     custom_dir: theme
     logo: 'images/logo.png'
 nav:
-    - 'Welcome': 'index.md'
+    - 'Introduction': 'index.md'
     - 'Admin Guide': 'admin-guide.md'
     - 'Developer Guide': 'developer-guide.md'
     - 'User Guide': 'user-guide.md'

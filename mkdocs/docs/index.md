@@ -33,6 +33,16 @@ Binokula attempts to address most of the common problems associated with secure 
 * *Quickly* publish new reports or change existing reports, all without needing a software developer.
 * Automate the entire process, while knowing that Binokula constantly monitors the platform for you.
 
+###What does Binokula look like?
+See for yourself by selecting one of the demo users on the [Binokula demo site](https://binokula.app/demo/index)
+
+![alt text](images/index/demo_report.PNG "Demo Sales Performance Report")
+
+Reports can also be configured for mobile viewing.
+
+![alt text](images/index/demo_mobile_report.PNG "Demo Mobile Sales Performance Report")
+
+
 ###How does Binokula work?
 
 Binokula provides a set of services based around Microsoft Power BI. It allows you to publish and share reports built in Power BI through a centralized website. Each user will manage their own login on Binokula or you give them access through the Single-Sign-On API. Binokula ensures users can only see reports assigned to them and automatically enforces row-level security (RLS) to each report. 

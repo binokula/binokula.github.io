@@ -116,4 +116,4 @@ Once you access Binokula you will either be:
  * Need to avoid a large and complex IT projects.
  * Need to avoid licensing per named user.
  * Need to be up and running as soon as possible.
- * Need to provide a easy and simple experience for end users.
+ * Need to provide an easy and simple experience for end users.

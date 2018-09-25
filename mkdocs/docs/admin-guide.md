@@ -3,25 +3,25 @@
 ###Getting Started
 This guide will take you through all the required steps for providing secure reporting to your stakeholder. This includes:
 
-1. Getting access to a Binokula tenant
-+ Building and publishing report in Power BI Desktop
+1. Getting access to a Binokula Tenant
++ Building and publishing a report in Power BI Desktop
 + Providing access to reports in Binokula
-+ Automating the refresh of data in reports
++ Automating data refreshes
 
 
 ###Getting a Binokula Tenant
-A Binokula Tenant is your dedicated area for publishing, hosting and managing access to your report content. Only organizations who wish to share and control access to reports need a tenant. If you are expecting to just access reports in Binokula, you will need to be added as a user on a tenant.
+A Binokula Tenant is your dedicated area for publishing, hosting and managing access to your report content. Only organizations that wish to share and control access to reports need a Tenant. If you are expecting to just access reports in Binokula, you will need to be added as a User on a Tenant.
 
-If you are an organization who wishes to get a trial tenant, please contact <sales@binokula.com>.
+If your organization wishes to get a trial Tenant, please contact <sales@binokula.com>.
 
 If you are expecting to already have access to reports in Binokula, you can enter your email address at <https://binokula.app> or contact the organization whose report content you wish to access.
 
 ###Building and Publishing Reports
 ####Building a Report without RLS
 
-> * RLS - Row-Level Security ensure reports are secured so that users only see the data they are allowed to see.
+> * RLS - Row-Level Security ensures that users see only the data they are authorized to see.
 
-Binokula uses Microsoft Power BI as its report building tool. For a report to be correctly published in Binokula, the report has to adhere to the following prerequisites:
+Binokula uses Microsoft Power BI as its report building tool. For a report to be correctly published in Binokula, the report has to adhere to the following:
 
 * Must have a security role called "User_Security" in the Power BI Model.
 <details>
@@ -29,17 +29,10 @@ Binokula uses Microsoft Power BI as its report building tool. For a report to be
     Show "User_Security" example
   </summary>
   ![alt text](images/admin-guide/user_security_role.PNG "User_Security role")
-</details>
-* Should have a DAX filter on the Entity to User Mapping List which uses the USERNAME() function. (Only required for Row-Level-Security)
-<details>
-  <summary>
-    Show USERNAME() example
-  </summary>
-  ![alt text](images/admin-guide/username_filter.PNG "USERNAME() filter")
 </details>
 
 ####Building a Report with RLS
-Building a report with RLS requires the report to adhere to the following prerequisites:
+Building a report with RLS requires that the report adhere to the following:
 
 * Must have a security role called "User_Security" in the Power BI Model.
 <details>
@@ -48,7 +41,7 @@ Building a report with RLS requires the report to adhere to the following prereq
   </summary>
   ![alt text](images/admin-guide/user_security_role.PNG "User_Security role")
 </details>
-* Must have a DAX filter on the Entity to User Mapping List which uses the USERNAME() function. (Only required for Row-Level-Security)
+* Must have a DAX filter on the Entity to User Mapping List which uses the USERNAME() function.
 <details>
   <summary>
     Show USERNAME() example
@@ -65,7 +58,7 @@ Building a report with RLS requires the report to adhere to the following prereq
 </details>
 
 ####Testing Power BI RLS
-Once you have configured the RLS as shown above, you can test the security by impersonating a user. This is done by:
+Once you have configured the RLS as shown above, you can test the security by impersonating a user. To do this:
 
 1. Click "View as Roles" in Power BI Desktop;
 + Tick "Other User" and enter the test user's email address; and
@@ -76,14 +69,14 @@ Once you have configured the RLS as shown above, you can test the security by im
   </summary>
   ![alt text](images/admin-guide/test_security.PNG "Test security example")
 </details>
-Any report you view now be secured for the specific user.
+You should now only see data that the test user should see.
 
 ####Publishing Power BI Reports
-Once you have built and tested your Power BI report, the next step is to publish the report to your dedicated tenant. This is done with the unique publisher account, whose details you would have received as part of requesting your Binokula tenant. You can sign-in with the publisher account by clicking on "Sign in" in Power BI Desktop. If you are already signed in with a different account, click on the account name and select "Switch account". Once you are signed in, you can publish the report by:
+Once you have built and tested your Power BI report, the next step is to publish the report to your dedicated Tenant. This is done with the unique publisher account, details you would have received as part of requesting your Binokula Tenant. You can sign-in with the publisher account by clicking on "Sign in" in Power BI Desktop. If you are already signed in with a different account, click on the account name and select "Switch account". Once you are signed in, you can publish the report by:
 
 1. Saving any changes;
 + Clicking on the "Publish" button on the Home menu; and 
-+ Choosing "binokula" as the destination before clicking "Select"
++ Choosing "Binokula" as the destination before clicking "Select"
 
 Note:
 > * Save the report with a friendly name that you would want your users to see. Try to avoid names with abbreviations and version numbers like "test_fin_HL_V0.13".
@@ -91,7 +84,7 @@ Note:
 > * Another way to edit an existing report is by making changes on powerbi.com with your publisher account. Re-publishing from Power BI Desktop will override these changes.
 
 ####Report for Mobile Viewing
-Power BI Mobile support is supported by Binokula. All you need to do is create the mobile view of a report in the Power BI Desktop file and publish it to your tenant. Please see [Microsoft's Power BI Phone Report documentation](https://docs.microsoft.com/en-us/power-bi/desktop-create-phone-report) for more information on configuring phone layout on Power BI Desktop.
+Power BI Mobile is supported by Binokula. All you need to do is create the mobile view of a report in the Power BI Desktop file and publish it to your Tenant. Please see [Microsoft's Power BI Phone Report documentation](https://docs.microsoft.com/en-us/power-bi/desktop-create-phone-report) for more information on configuring phone layout on Power BI Desktop.
 <details>
   <summary>
     Show Phone Layout option in Power BI Desktop
@@ -101,30 +94,30 @@ Power BI Mobile support is supported by Binokula. All you need to do is create t
 
 
 ###Managing access to reports in Binokula
-Any new reports published are by default not accessible to any users. Access to reports are controlled through report groups. To give yourself access to view a report, you will need to be an administrator and complete the following in Binokula:
+Any new reports published are by default not accessible to any users. Access to reports is controlled through Report Groups. To give yourself access to view a report, you will need to be an administrator and complete the following in Binokula:
 
-1. Import the report definition into Binokula by clicking on the refresh button in the reports administration page;
-+ Creating a new Report Group in the report group administration page;
-+ Adding the new report to the Report Group;
-+ Adding yourself as a user in the report group; and
-+ Selecting the report in the Reports user page.
+1. Import the report definition into Binokula by clicking on the Refresh button in the reports administration page;
++ Create a new Report Group in the report group administration page;
++ Add the new report to the Report Group;
++ Add yourself as a user in the report group; and
++ Select the report in the Reports user page.
 
 ####Assigning more users and reports
-The process is exactly the same as the previous step, all you have to do is add more users. If will be too time-consuming to add users by one-by-one, you can create a script to call Binokula REST API to add users in bulk. Please see the developer guide for details on the REST API. If you need to expose more than one report to a specific audience, multiple reports can also be added to a report group through the Report Group administration page.
+The process is exactly the same as the previous steps, all you have to do is add more users. If it will be too time-consuming to add users by one-by-one, you can create a script to call the Binokula REST API to add users in bulk. Please see the Developer Guide for details on the REST API. If you need to expose more than one report to a specific audience, multiple reports can also be added to a Report Group through the Report Group administration page.
 
 Note:
-> * Currently communication to end users are managed by tenant administrators. However, you can send a forgot password link to users directly in the User Management administration page.
-> * Typical onboarding communication contains a link to the binokula.app page with instruction to enter their email address and then click the reset password link.
+> * Currently communications to end users are managed by Tenant administrators. However, you can send a Forgot Password link to users directly in the User Management administration page.
+> * Typical onboarding communication contains a link to the Binokula.app page with instructions to enter their email address and then click the Reset password link.
 
 ###Automating and scheduling the refresh of report data
-Refreshing data for Binokula reports is the same as any other Power BI report*. Any on-premise data used in the report needs to be supported by the Power BI On-Premise Data Gateway. The on-premise data gateway needs to be installed and configured with credentials of your unique publisher account. Cloud data sources also needs to be supported by the Power BI service. Additional information on Power BI's data refresh capabilities can be found here:
+Refreshing data for Binokula reports is the same as in any other Power BI report*. Any on-premise data used in the report needs to be supported by the Power BI On-Premise Data Gateway. The on-premise data gateway needs to be installed and configured with the credentials of your unique publisher account. Cloud data sources also need to be supported by the Power BI service. Additional information on Power BI's data refresh capabilities can be found here:
 
 * [Data refresh in Power BI](https://docs.microsoft.com/en-us/power-bi/refresh-data)
 * [Refresh Data Sources from Power BI Desktop](https://docs.microsoft.com/en-us/power-bi/refresh-data#power-bi-desktop-file)
 
 *The Power BI Data Model still needs to have the "User_Security" role created in Power BI Desktop.
 
-Once you have a on-premise data gateway configured, you can access [powerbi.com](https://powerbi.com) with your assigned publisher account and [configure the schedule refresh as per the Power BI Documentation](https://docs.microsoft.com/en-us/power-bi/refresh-scheduled-refresh).
+Once you have an on-premise data gateway configured, you can access [powerbi.com](https://powerbi.com) with your assigned publisher account and [configure the schedule refresh as per the Power BI Documentation](https://docs.microsoft.com/en-us/power-bi/refresh-scheduled-refresh).
 
 ###Managing Users
 User Management is done through the [user management link](https://binokula.app/Admin/Users) in the admin portal. This interface will allow you to:
@@ -142,8 +135,8 @@ User Management is done through the [user management link](https://binokula.app/
 </details>
 
 Note:
-> * Users are automatically added when programmtically signed in with the [single-sign-on API](../developer-guide/#single-sign-on).
-> * Bulk adding, deleting, enabling or disabling more than one user at a time can be achieved programmtically by calling the [User Management API](../developer-guide/#user-management).
+> * Users are automatically added when programmatically signed in with the [single-sign-on API](../developer-guide/#single-sign-on).
+> * Bulk adding, deleting, enabling or disabling more than one user at a time can be achieved programmatically by calling the [User Management API](../developer-guide/#user-management).
 
 
 

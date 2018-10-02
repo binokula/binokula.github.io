@@ -2,7 +2,7 @@
 
 ###October 2, 2018
 ####New
-* Admins now have the option of setting a maximum number of days a user can be inactive before their account is disabled. Admins are able to re-enable disabled accounts if disired. Default number of days before a user is disabled is 30 days.
+* Admins now have the option of setting a maximum number of days a user can be inactive before their account is disabled. Admins are able to re-enable disabled accounts if desired. Default number of days before a user is disabled is 30 days.
 * We have now provided a demo page which contains demo users. This page allows anyone to try Binokula as sample users and see how each user views Binokula differently.
 * Admins can now test user accounts through SSO links. This allows admins to check what a users account can see or do when they login to Binokula.
 ####Enhancements

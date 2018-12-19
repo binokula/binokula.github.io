@@ -1,5 +1,12 @@
 # Release Notes ![](images/favicon.png)
 
+###December 20, 2018
+####New
+* User Groups. This feature allows admins to create groups of users then assign them to multiple report groups. This makes managing multiple users on what reports they can access easier. Refer to the Admin Guide for more details.
+* Timezone selection is now available for Admin Reporting purposes.
+####Enhancements
+* Reports that have their RLS configured incorrectly will display an error message on the report page when a user tries to access them.
+
 ###October 29, 2018
 ####New
 * Admins are now able to view their tenants admin secret in Portal Settings.

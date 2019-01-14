@@ -138,6 +138,7 @@ User Management is done through the [user management link](https://binokula.app/
 * Enable/disable users
 * Enable/disable admins
 * Reset passwords
+
 <details>
   <summary>
     User management functions
@@ -149,5 +150,23 @@ Note:
 > * Users are automatically added when programmatically signed in with the [single-sign-on API](../developer-guide/#single-sign-on).
 > * Bulk adding, deleting, enabling or disabling more than one user at a time can be achieved programmatically by calling the [User Management API](../developer-guide/#user-management).
 
+###User Groups
+User Group Management is done through [the user group link](https://binokula.app/Admin/UserGroups) in the admin portal. The User Group management page allows admins to:
 
+* Create a new User Group
+* Delete a new User Group
+* Edit User Group Details
+* Assign existing users to the group
+* Assign the User Group to one or multiple report groups
 
+<details>
+  <summary>
+    User group functions
+  </summary>
+  ![alt text](images/admin-guide/user_group.PNG "User group functions")
+</details>
+
+####User Group Structure
+Users within a User Group can be assigned to a Report Group. This function allows easier assignment and reassignment of multiple users to reports.
+
+![alt text](images/admin-guide/user_group_diagram.png "User group diagram")

@@ -1,5 +1,12 @@
 # Release Notes ![](images/favicon.png)
 
+###October 29, 2018
+####New
+* Admins are now able to view their tenants admin secret in Portal Settings.
+* Admins can reset their Publisher account password under Portal Settings.
+####Enhancements
+* Improved security.
+
 ###October 2, 2018
 ####New
 * Admins now have the option of setting a maximum number of days a user can be inactive before their account is disabled. Admins are able to re-enable disabled accounts if desired. Default number of days before a user is disabled is 30 days.

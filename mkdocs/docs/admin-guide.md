@@ -83,6 +83,17 @@ Note:
 > * Editing an existing report can be done by re-publishing the same report from Power BI Desktop. Select Yes when prompted to overwrite the dataset.
 > * Another way to edit an existing report is by making changes on powerbi.com with your publisher account. Re-publishing from Power BI Desktop will override these changes.
 
+####Reseting your Publisher Account Password
+To reset your tenants Publisher Account password:
+
+1. Navigate to the Administrator page
++ Go to Portal settings
++ Click the "Reset Publisher Account Password" link and confirm
++ Copy and use the strong temporary password provided to sign into your tenants Publisher Account via [Power BI](https://powerbi.microsoft.com)
+
+Note:
+> You will be prompt to change your password upon your initial sign in using the provided temporary password.
+
 ####Report for Mobile Viewing
 Power BI Mobile is supported by Binokula. All you need to do is create the mobile view of a report in the Power BI Desktop file and publish it to your Tenant. Please see [Microsoft's Power BI Phone Report documentation](https://docs.microsoft.com/en-us/power-bi/desktop-create-phone-report) for more information on configuring phone layout on Power BI Desktop.
 <details>

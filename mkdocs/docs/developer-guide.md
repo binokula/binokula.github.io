@@ -3,6 +3,16 @@
 ###Introduction
 The Binokula API provides external applications the ability to access, edit or add objects related to the Binokula application. Current end-points focus on user management and access to reports. All API calls are secured with SSL, tenant names and API Keys (client_secret). If you need access to your client_secret, please contact <support@binokula.app>.
 
+###Client Secret
+Your Client is used to access Binokula's API endpoints. Your tenants Client Secret can be accessed by an Admin account. To find your tenants Client Secret:
+
+1. Sign into Binokula with an Admin account
++ Navigate to the Administrator page
++ Go to Portal settings
++ Find the label Client Secret and click "Show Client Secret"
+
+From there you can copy the Client Secret and start using Binokula APIs!
+
 ###Single-Sign On
 ####Overview
 Single-Sign On (SSO) enables external applications to give users access to Binokula without the need for them to enter their Binokula password. Access to Binokula is gained with the combination of a user's email address and a securely generated access token. The access token is valid for one hour and can be refreshed using the API. Binokula will check if the users email is registered as a system user and if the access token is valid before granting access to the application. If authentication fails, a redirect to the Binokula login page will be executed. Only one user token can be active at any given time.

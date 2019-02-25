@@ -170,3 +170,32 @@ User Group Management is done through [the user group link](https://binokula.app
 Users within a User Group can be assigned to a Report Group. This function allows easier assignment and reassignment of multiple users to reports.
 
 ![alt text](images/admin-guide/user_group_diagram.png "User group diagram")
+
+###RLS Aliasing
+Admins have the option of enabling username aliasing to their users. Users can share the same alias. By enabling RLS Aliasing the RLS then uses the users alias as the filter on the report. Your Reports filtering must be mapped to the aliasing of your choice. The RLS Aliasing and enablement can be found on the User Management page.
+
+####Enable all users RLS Alias
+1. Navigate to the Admin page then select "User Management"
++ Select the "Enable RLS Alias" next to "All Users"  
+![alt text](images/admin-guide/enable_rls_alias.PNG "RLS Alias Enable all users Button")
++ Confirm your selection
+
+####Disable all users RLS Alias
+1. Navigate to the Admin page then select "User Management"
++ Select the "Disable RLS Alias" next to "All Users"  
+![alt text](images/admin-guide/enable_rls_alias.PNG "RLS Alias Disable all users Button")
++ Confirm your selection
+
+####Editing users RLS Alias
+1. Navigate to the Admin page then select "User Management"
++ Find the user you want to edit their alias for
++ Click "Edit RLS Alias" on the users row. This will take you to the Edit Page.
++ Fill in your desired alias into the form
++ Click the "Save" button to save your changes
+
+####Enabling/Disabling one users RLS Alias
+1. Navigate to the Admin page then select "User Management"
++ Find the user you want to enable/disable their alias for
++ Click "Edit RLS Alias" on the users row. This will take you to the Edit Page.
++ Check the checkbox to enable their alias or uncheck to disable alias
++ Click the "Save" button to save your changes

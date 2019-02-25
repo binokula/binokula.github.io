@@ -43,9 +43,18 @@ sequenceDiagram
 
 * email
 * tenant
-* existingusersonly - optional detault set to "false". When "true" a valid token is only generated for existing users. Can be used to stop users from being auto-created.
 * code
     * This is a function key provided to the customer to access this endpoint
+* existingusersonly **(optional)**
+    * Boolean
+    * Default set to "false". When "true" a valid token is only generated for existing users. Can be used to stop users from being auto-created.
+* alias **(optional)**
+    * This is used to assign the user an alias upon access token creation
+* aliasEnable **(optional)**
+    * Boolean
+    * Default set to "false". When "true" the alias assigned to the user will be used in the reports RLS filtering.
+    * Note: If the Alias is enabled but no alias is assigned to the user then Binokula will use the users email as the RLS filtering by default 
+
 Response:
 
 Status: 200 OK
@@ -56,6 +65,11 @@ Status: 200 OK
     "expiry_date": "2018-04-26T03:08:03.893495+00:00"
 }
 ```
+
+RLS Aliasing Notes:
+
+* The RLS Alias optional parameters made in the request of the access token are applied when the access token is used
+* If the access token has not been used before it has expired then the RLS Alias parameters in will not be saved to the user
 
 #####(Redirect to) Binokula External Access
 **URL:** <https://binokula.app/Account/ExternalAccess>

@@ -1,5 +1,11 @@
 # Release Notes ![](images/favicon.png)
 
+###February 19, 2019
+####New
+* Users can now be assigned an alias. An alias is used for RLS filtering instead of the users default email.
+* RLS Aliases for each user can be enabled through User Management. Refer to our admin documentation for more detail.
+* RLS Alias can be assigned and enabled through our SSO API. Refer to our developer documentation for more detail.
+
 ###December 20, 2018
 ####New
 * User Groups. This feature allows admins to create groups of users then assign them to multiple report groups. This makes managing multiple users on what reports they can access easier. Refer to the Admin Guide for more details.

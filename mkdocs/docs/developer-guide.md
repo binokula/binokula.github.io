@@ -171,6 +171,80 @@ The User Management API enables external applications to register, delete, enabl
 }
 ```
 
+#####User Group List
+**URL:** <https://api.binokula.app/api/UserGroup/List>
+
+**HTTP Verb:** Get
+
+**Headers:**
+
+* client_secret
+
+**Parameters:**
+
+* email **(optional)**
+* group **(optional)**
+* tenant
+* code
+    * This is a function key provided to the customer to access this endpoint
+
+**Response:**
+
+* Status: 200 OK
+
+#####User Activity List
+**URL:** <https://api.binokula.app/api/EventActivity/List>
+
+**HTTP Verb:** Get
+
+**Headers:**
+
+* client_secret
+
+**Parameters:**
+
+* email **(optional)**
+* event **(optional)**
+    * user_delete
+    * user_add
+    * report_view
+    * portal_login
+    * sso_login
+    * forgot_pwd_invalid
+    * disable_user
+    * forgot_pwd_valid
+* start_time **(optional)**
+    * Any datetime string format 
+* end_time **(optional)**
+    * Any datetime string format
+* order **(optional)**
+    * Default: Descending
+    * asc/desc
+    * Order by timestamp
+* tenant
+* code
+    * This is a function key provided to the customer to access this endpoint
+
+**Response:**
+
+* Status: 200 OK
+
+```json
+[{
+    "timestamp": "2019-03-07T02:04:26.2046466",
+    "user": "test@email.com",
+    "eventActivity": "report_view"
+}, {
+    "timestamp": "2019-03-07T02:04:16.8408495",
+    "user": "test@email.com",
+    "eventActivity": "portal_login"
+}, {
+    "timestamp": "2019-03-07T00:13:37.3125127",
+    "user": "test@email.com",
+    "eventActivity": "user_add"
+}]
+```
+
 ###Embedding Binokula Generated Reports
 ####Overview
 The Binokula API can provide you with the necessary tokens and credentials to embed Binokula generated reports on your own web page. In order to embed Binokula generated to your own webpage, you must use the [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Embedding-Basics#application-owns-the-data) and use Binokula generated embed tokens to do so. To embed a Binokula generated report you will need:

@@ -257,6 +257,8 @@ To get the above you will need to use the Binokula API.
 
 Note: Binokula is not responsible for the security implemented on your independent web page. Developers must ensure that reports they are embedding are only visible to their intended users.
 
+####Endpoints
+
 #####Get Report List
 **URL:** <https://api.binokula.app/api/Report/List>
 
@@ -303,7 +305,7 @@ Note: Binokula is not responsible for the security implemented on your independe
 ]
 ```
 
-#####Get Report List
+#####Get Embed Token
 **URL:** <https://api.binokula.app/api/Report/EmbedToken>
 
 **HTTP Verb:** Get

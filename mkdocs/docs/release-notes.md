@@ -1,5 +1,11 @@
 # Release Notes ![](images/favicon.png)
 
+###March 8, 2019
+####New
+* Developers can now embed Binokula generated reports into their own websites using the Power BI JavaScript API. The new Binokula API endpoints can provide developers with Report ID, Embedded URL and Embed Token in order to use the Power BI JavaScript API. Refer to the Developer Guide for more details.
+* Developers can retrieve Event Activity in our new Binokula API endpoint. This API can be filtered by user event and start/end time.
+* Developers can retrieve User Group information in our new Binokula API endpoint. This API can be filtered by user and/or user group.
+
 ###February 19, 2019
 ####New
 * Users can now be assigned an alias. An alias is used for RLS filtering instead of the users default email.

@@ -2,19 +2,19 @@
 
 ###March 8, 2019
 ####New
-* Developers can now embed Binokula generated reports into their own websites using the Power BI JavaScript API. The new Binokula API endpoints can provide developers with Report ID, Embedded URL and Embed Token in order to use the Power BI JavaScript API. Refer to the Developer Guide for more details.
-* Developers can retrieve Event Activity in our new Binokula API endpoint. This API can be filtered by user event and start/end time.
-* Developers can retrieve User Group information in our new Binokula API endpoint. This API can be filtered by user and/or user group.
+* [Embedding Binokula generated reports into your own website](../developer-guide/#embedding-binokula-generated-reports). Developers can now embed Binokula generated reports into their own websites using the Power BI JavaScript API. The new Binokula API endpoints can provide developers with Report ID, Embedded URL and Embed Token in order to use the Power BI JavaScript API.
+* [User Activity Binokula API Endpoint](../developer-guide/#user-activity-list). Developers can retrieve Event Activity in our new Binokula API endpoint. This API can be filtered by user event and start/end time.
+* [User Group Binokula API Endpoint](../developer-guide/#user-activity-list). Developers can retrieve User Group information in our new Binokula API endpoint. This API can be filtered by user and/or user group.
 
 ###February 19, 2019
 ####New
-* Users can now be assigned an alias. An alias is used for RLS filtering instead of the users default email.
-* RLS Aliases for each user can be enabled through User Management. Refer to our admin documentation for more detail.
-* RLS Alias can be assigned and enabled through our SSO API. Refer to our developer documentation for more detail.
+* [Users can now be assigned an alias](../admin-guide/#rls-aliasing). An alias is used for RLS filtering instead of the users default email.
+* RLS Aliases for each [user can be enabled through User Management](../admin-guide/#enablingdisabling-one-users-rls-alias).
+* RLS Alias can be assigned and enabled through our [SSO API](../developer-guide/#issuerenew-user-access-token).
 
 ###December 20, 2018
 ####New
-* User Groups. This feature allows admins to create groups of users then assign them to multiple report groups. This makes managing multiple users on what reports they can access easier. Refer to the Admin Guide for more details.
+* [User Groups](../admin-guide/#user-groups). This feature allows admins to create groups of users then assign them to multiple report groups. This makes managing multiple users on what reports they can access easier. Refer to the Admin Guide for more details.
 * Timezone selection is now available for Admin Reporting purposes.
 ####Enhancements
 * Reports that have their RLS configured incorrectly will display an error message on the report page when a user tries to access them.

@@ -83,6 +83,17 @@ Note:
 > * Editing an existing report can be done by re-publishing the same report from Power BI Desktop. Select Yes when prompted to overwrite the dataset.
 > * Another way to edit an existing report is by making changes on powerbi.com with your publisher account. Re-publishing from Power BI Desktop will override these changes.
 
+####Reseting your Publisher Account Password
+To reset your tenants Publisher Account password:
+
+1. Navigate to the Administrator page
++ Go to Portal settings
++ Click the "Reset Publisher Account Password" link and confirm
++ Copy and use the strong temporary password provided to sign into your tenants Publisher Account via [Power BI](https://powerbi.microsoft.com)
+
+Note:
+> You will be prompt to change your password upon your initial sign in using the provided temporary password.
+
 ####Report for Mobile Viewing
 Power BI Mobile is supported by Binokula. All you need to do is create the mobile view of a report in the Power BI Desktop file and publish it to your Tenant. Please see [Microsoft's Power BI Phone Report documentation](https://docs.microsoft.com/en-us/power-bi/desktop-create-phone-report) for more information on configuring phone layout on Power BI Desktop.
 <details>
@@ -127,6 +138,7 @@ User Management is done through the [user management link](https://binokula.app/
 * Enable/disable users
 * Enable/disable admins
 * Reset passwords
+
 <details>
   <summary>
     User management functions
@@ -138,5 +150,40 @@ Note:
 > * Users are automatically added when programmatically signed in with the [single-sign-on API](../developer-guide/#single-sign-on).
 > * Bulk adding, deleting, enabling or disabling more than one user at a time can be achieved programmatically by calling the [User Management API](../developer-guide/#user-management).
 
+###User Groups
+User Group Management is done through [the user group link](https://binokula.app/Admin/UserGroups) in the admin portal. The User Group management page allows admins to:
 
+* Create a new User Group
+* Delete a new User Group
+* Edit User Group Details
+* Assign existing users to the group
+* Assign the User Group to one or multiple report groups
 
+<details>
+  <summary>
+    User group functions
+  </summary>
+  ![alt text](images/admin-guide/user_group.PNG "User group functions")
+</details>
+
+####User Group Structure
+Users within a User Group can be assigned to a Report Group. This function allows easier assignment and reassignment of multiple users to reports.
+
+![alt text](images/admin-guide/user_group_diagram.png "User group diagram")
+
+###RLS Aliasing
+Admins have the option of enabling username aliasing to their users. Users can share the same alias. By enabling RLS Aliasing the RLS then uses the users alias as the filter on the report. Your Reports filtering must be mapped to the aliasing of your choice. The RLS Aliasing and enablement can be found on the User Management page.
+
+####Editing users RLS Alias
+1. Navigate to the Admin page then select "User Management"
++ Find the user you want to edit their alias for
++ Click "Edit RLS Alias" on the users row. This will take you to the Edit Page.
++ Fill in your desired alias into the form
++ Click the "Save" button to save your changes
+
+####Enabling/Disabling one users RLS Alias
+1. Navigate to the Admin page then select "User Management"
++ Find the user you want to enable/disable their alias for
++ Click "Edit RLS Alias" on the users row. This will take you to the Edit Page.
++ Check the checkbox to enable their alias or uncheck to disable alias
++ Click the "Save" button to save your changes

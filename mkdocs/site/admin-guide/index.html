@@ -259,6 +259,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#reseting-your-publisher-account-password" title="Reseting your Publisher Account Password" class="md-nav__link">
+    Reseting your Publisher Account Password
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#report-for-mobile-viewing" title="Report for Mobile Viewing" class="md-nav__link">
     Report for Mobile Viewing
   </a>
@@ -301,6 +308,53 @@
   <a href="#managing-users" title="Managing Users" class="md-nav__link">
     Managing Users
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-groups" title="User Groups" class="md-nav__link">
+    User Groups
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#user-group-structure" title="User Group Structure" class="md-nav__link">
+    User Group Structure
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rls-aliasing" title="RLS Aliasing" class="md-nav__link">
+    RLS Aliasing
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#editing-users-rls-alias" title="Editing users RLS Alias" class="md-nav__link">
+    Editing users RLS Alias
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enablingdisabling-one-users-rls-alias" title="Enabling/Disabling one users RLS Alias" class="md-nav__link">
+    Enabling/Disabling one users RLS Alias
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -434,6 +488,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#reseting-your-publisher-account-password" title="Reseting your Publisher Account Password" class="md-nav__link">
+    Reseting your Publisher Account Password
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#report-for-mobile-viewing" title="Report for Mobile Viewing" class="md-nav__link">
     Report for Mobile Viewing
   </a>
@@ -476,6 +537,53 @@
   <a href="#managing-users" title="Managing Users" class="md-nav__link">
     Managing Users
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-groups" title="User Groups" class="md-nav__link">
+    User Groups
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#user-group-structure" title="User Group Structure" class="md-nav__link">
+    User Group Structure
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rls-aliasing" title="RLS Aliasing" class="md-nav__link">
+    RLS Aliasing
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#editing-users-rls-alias" title="Editing users RLS Alias" class="md-nav__link">
+    Editing users RLS Alias
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enablingdisabling-one-users-rls-alias" title="Enabling/Disabling one users RLS Alias" class="md-nav__link">
+    Enabling/Disabling one users RLS Alias
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -581,6 +689,18 @@ You should now only see data that the test user should see.</li>
 <li>Another way to edit an existing report is by making changes on powerbi.com with your publisher account. Re-publishing from Power BI Desktop will override these changes.</li>
 </ul>
 </blockquote>
+<h4 id="reseting-your-publisher-account-password">Reseting your Publisher Account Password</h4>
+<p>To reset your tenants Publisher Account password:</p>
+<ol>
+<li>Navigate to the Administrator page</li>
+<li>Go to Portal settings</li>
+<li>Click the "Reset Publisher Account Password" link and confirm</li>
+<li>Copy and use the strong temporary password provided to sign into your tenants Publisher Account via <a href="https://powerbi.microsoft.com">Power BI</a></li>
+</ol>
+<p>Note:</p>
+<blockquote>
+<p>You will be prompt to change your password upon your initial sign in using the provided temporary password.</p>
+</blockquote>
 <h4 id="report-for-mobile-viewing">Report for Mobile Viewing</h4>
 <p>Power BI Mobile is supported by Binokula. All you need to do is create the mobile view of a report in the Power BI Desktop file and publish it to your Tenant. Please see <a href="https://docs.microsoft.com/en-us/power-bi/desktop-create-phone-report">Microsoft's Power BI Phone Report documentation</a> for more information on configuring phone layout on Power BI Desktop.
 <details>
@@ -622,14 +742,14 @@ You should now only see data that the test user should see.</li>
 <li>Delete users</li>
 <li>Enable/disable users</li>
 <li>Enable/disable admins</li>
-<li>Reset passwords
-<details>
+<li>Reset passwords</li>
+</ul>
+<p><details>
   <summary>
     User management functions
   </summary>
   <img alt="alt text" src="../images/admin-guide/user_functions.PNG" title="User management functions" />
-</details></li>
-</ul>
+</details></p>
 <p>Note:</p>
 <blockquote>
 <ul>
@@ -637,6 +757,42 @@ You should now only see data that the test user should see.</li>
 <li>Bulk adding, deleting, enabling or disabling more than one user at a time can be achieved programmatically by calling the <a href="../developer-guide/#user-management">User Management API</a>.</li>
 </ul>
 </blockquote>
+<h3 id="user-groups">User Groups</h3>
+<p>User Group Management is done through <a href="https://binokula.app/Admin/UserGroups">the user group link</a> in the admin portal. The User Group management page allows admins to:</p>
+<ul>
+<li>Create a new User Group</li>
+<li>Delete a new User Group</li>
+<li>Edit User Group Details</li>
+<li>Assign existing users to the group</li>
+<li>Assign the User Group to one or multiple report groups</li>
+</ul>
+<p><details>
+  <summary>
+    User group functions
+  </summary>
+  <img alt="alt text" src="../images/admin-guide/user_group.PNG" title="User group functions" />
+</details></p>
+<h4 id="user-group-structure">User Group Structure</h4>
+<p>Users within a User Group can be assigned to a Report Group. This function allows easier assignment and reassignment of multiple users to reports.</p>
+<p><img alt="alt text" src="../images/admin-guide/user_group_diagram.png" title="User group diagram" /></p>
+<h3 id="rls-aliasing">RLS Aliasing</h3>
+<p>Admins have the option of enabling username aliasing to their users. Users can share the same alias. By enabling RLS Aliasing the RLS then uses the users alias as the filter on the report. Your Reports filtering must be mapped to the aliasing of your choice. The RLS Aliasing and enablement can be found on the User Management page.</p>
+<h4 id="editing-users-rls-alias">Editing users RLS Alias</h4>
+<ol>
+<li>Navigate to the Admin page then select "User Management"</li>
+<li>Find the user you want to edit their alias for</li>
+<li>Click "Edit RLS Alias" on the users row. This will take you to the Edit Page.</li>
+<li>Fill in your desired alias into the form</li>
+<li>Click the "Save" button to save your changes</li>
+</ol>
+<h4 id="enablingdisabling-one-users-rls-alias">Enabling/Disabling one users RLS Alias</h4>
+<ol>
+<li>Navigate to the Admin page then select "User Management"</li>
+<li>Find the user you want to enable/disable their alias for</li>
+<li>Click "Edit RLS Alias" on the users row. This will take you to the Edit Page.</li>
+<li>Check the checkbox to enable their alias or uncheck to disable alias</li>
+<li>Click the "Save" button to save your changes</li>
+</ol>
                 
                   
                 

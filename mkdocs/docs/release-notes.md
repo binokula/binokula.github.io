@@ -1,5 +1,31 @@
 # Release Notes ![](images/favicon.png)
 
+###March 8, 2019
+####New
+* [Embedding Binokula generated reports into your own website](../developer-guide/#embedding-binokula-generated-reports). Developers can now embed Binokula generated reports into their own websites using the Power BI JavaScript API. The new Binokula API endpoints can provide developers with Report ID, Embedded URL and Embed Token in order to use the Power BI JavaScript API.
+* [User Activity Binokula API Endpoint](../developer-guide/#user-activity-list). Developers can retrieve Event Activity in our new Binokula API endpoint. This API can be filtered by user event and start/end time.
+* [User Group Binokula API Endpoint](../developer-guide/#user-activity-list). Developers can retrieve User Group information in our new Binokula API endpoint. This API can be filtered by user and/or user group.
+
+###February 19, 2019
+####New
+* [Users can now be assigned an alias](../admin-guide/#rls-aliasing). An alias is used for RLS filtering instead of the users default email.
+* RLS Aliases for each [user can be enabled through User Management](../admin-guide/#enablingdisabling-one-users-rls-alias).
+* RLS Alias can be assigned and enabled through our [SSO API](../developer-guide/#issuerenew-user-access-token).
+
+###December 20, 2018
+####New
+* [User Groups](../admin-guide/#user-groups). This feature allows admins to create groups of users then assign them to multiple report groups. This makes managing multiple users on what reports they can access easier. Refer to the Admin Guide for more details.
+* Timezone selection is now available for Admin Reporting purposes.
+####Enhancements
+* Reports that have their RLS configured incorrectly will display an error message on the report page when a user tries to access them.
+
+###October 29, 2018
+####New
+* Admins are now able to view their tenants admin secret in Portal Settings.
+* Admins can reset their Publisher account password under Portal Settings.
+####Enhancements
+* Improved security.
+
 ###October 2, 2018
 ####New
 * Admins now have the option of setting a maximum number of days a user can be inactive before their account is disabled. Admins are able to re-enable disabled accounts if desired. Default number of days before a user is disabled is 30 days.

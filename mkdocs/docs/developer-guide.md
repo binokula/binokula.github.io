@@ -214,9 +214,11 @@ The User Management API enables external applications to register, delete, enabl
     * disable_user
     * forgot_pwd_valid
 * start_time **(optional)**
-    * Any datetime string format 
+    * Any datetime string format
+    * E.g. MM/dd/yyyy hh:mm tt
 * end_time **(optional)**
     * Any datetime string format
+    * E.g. MM/dd/yyyy hh:mm tt
 * order **(optional)**
     * Default: Descending
     * asc/desc

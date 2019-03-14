@@ -909,6 +909,7 @@
 <li>Status: 200 OK</li>
 </ul>
 <h5 id="user-activity-list">User Activity List</h5>
+<p>This endpoint gets the top 1000 records by descending order by default. Supply the row ID in the query parameter to get the subsequent 1000 records starting at that row.</p>
 <p><strong>URL:</strong> <a href="https://api.binokula.app/api/EventActivity/List">https://api.binokula.app/api/EventActivity/List</a></p>
 <p><strong>HTTP Verb:</strong> Get</p>
 <p><strong>Headers:</strong></p>
@@ -945,6 +946,7 @@
 <li>Order by timestamp</li>
 </ul>
 </li>
+<li>id <strong>(optional)</strong></li>
 <li>tenant</li>
 <li>code<ul>
 <li>This is a function key provided to the customer to access this endpoint</li>

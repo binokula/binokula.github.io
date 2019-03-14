@@ -193,6 +193,8 @@ The User Management API enables external applications to register, delete, enabl
 * Status: 200 OK
 
 #####User Activity List
+This endpoint gets the top 1000 records by descending order by default. Supply the row ID in the query parameter to get the subsequent 1000 records starting at that row.
+
 **URL:** <https://api.binokula.app/api/EventActivity/List>
 
 **HTTP Verb:** Get
@@ -223,6 +225,7 @@ The User Management API enables external applications to register, delete, enabl
     * Default: Descending
     * asc/desc
     * Order by timestamp
+* id **(optional)**
 * tenant
 * code
     * This is a function key provided to the customer to access this endpoint

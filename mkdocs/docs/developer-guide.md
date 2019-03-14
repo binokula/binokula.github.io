@@ -245,7 +245,7 @@ The User Management API enables external applications to register, delete, enabl
 }]
 ```
 
-###Embedding Binokula Generated Reports
+###Binokula Generated Report Properties API
 ####Overview
 The Binokula API can provide you with the necessary tokens and credentials to embed Binokula generated reports on your own web page. In order to embed Binokula generated to your own webpage, you must use the [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Embedding-Basics#application-owns-the-data) and use Binokula generated embed tokens to do so. To embed a Binokula generated report you will need:
 
@@ -329,8 +329,57 @@ Note: Binokula is not responsible for the security implemented on your independe
 
 ```json
 {
-    "token": "H4sIAAAAAAAEAC1WRQ7siBG9y986kpkizcLMbLdhZ7vNzBDl7umMZl9SlV49-s8fO336Kf3--fefMFHWuGFJzgaTU3aLPUPeXL0ECfOaGBLOHJEGVlvYSfquO6mCfTLkQCALseeER9LkrMfOMVIcNG2xgxIOyI20iCJ-HYvUFwTFh0O__fLQvgIwqRMRHUu11qKiP9-UYXXlMEIAlPGJQORrJ4xGv1pm0qGgLeqa0hPVAHYjBQVPsnn73iIo1V5oKx7qCSs4uTSAxfQGoiseeI-2vA0fMpzaPRsfWMVJj55DHF1g1dkHD7TMHHDVULPEWOy92Ya3MBQugutPIH7uh_ZypjWTzqDaA6IPwbkDMjtATI4xfhQirq3uPQNv1GKvi3uHqVdxChE3arxI6HOfLkExfm3nxoFEvM8sgTtwdormcFyryBmUfrDU3Ln1qiPrVGMdTB3OegNSw9iG4-Y9BpPYR8wafJBCqw53lUzC104pycE27A6djVg6JcldsBb1BQp3wI5iB7XlFxUHL5f7-Sua6oZGnQwYoamZxQcAKVymgfe7w0DwNEzjUG7O9rNbtwhzdQXRcKShdZ0zsFLYPKB5babP4yBi0mb0SJuomczCbeVQwrrC9fPxfp--Y1Xgc6ZA0cRA3aweLLLBzVEuRRYMNpWRuX5ASGpG5CKLma5z4EPLmipl-15Y42_LaQKA5iiObIKD8O7b-Pg6WqP8EzUkPVLR_TxEtdVCxivhcheaNJz-D_ke8hKGk8Pg8bE4XnPsEoU3JsCkpp8TKranThKIhE2fxPZth9EPhen3PDIo1m2oaNrjqQhFrQ2ehZ4qFUjOJlR8_MwBaiyKc67Pibl5TZisYhDGQYy5MQ2Op89ykg2c3OrwwqTvm4K2ktfn-VYz9YI-IyRZTXyGC9zvEO89PQ3P2e4E8KGzQDfGydgSeo03JCk-8epNLX8c_pHKxCJwseQ_Bg5qxU4JIpjxHim0OQ8cCmreduFOaIKXld5fTQOanfXspeEHZvA7aLW8MXO-XoGa0J1ccssUmkGlFuJ98zqvpmrVqmyT0nZ3lTs8-_d51kkqWJnOhvl6O2_0MSJFKiSfQS7ps-FOkvbLksF8j9h0bnaZuLSC1r4EdMhdAALNmce4mOLEtoUntFnqMKPbtdYXUmhAfW7xvYeGsDuSYS8E0O14DENvzM8Lx55MR5ytueAsHN6Qe2rTDIOVZ4-c-FjNW4wQoj1kPSkU1kpEosiapIY8SX9Q_wM9TXSg4KMIQqqEkTJPDtn0LcKGXvI2Lh5VcwHeF5bLZuPJLkO7BnWZoulfqJL-HIgiT9abwL3y-O06YeBe0tJj6E--DUu8Er3H7isl31lClz6_x-Hy0wHZFZHLNkSuxXkaEENmrAoblVu-q2gz_TSQfgFmOBTDmRt0t3QE-0o4DMuJXpIWpkCMeoza3e0S5MLx6McyiyPm2NVFGhpv9LSBjZlx99pWEW03D82MWw_eRSgkWkTC8Ehw9GypnOHxS2gvb3oLE6BlNUxC8KO4LPZL7B5dKOILsqTguY54OtWzjgvUV0lbErCpHOBJlYbioMwWa9sbl1frBLs60ybh2IHcUr0b2baQr5uxr3BRBn48BDh_B5RyuyHweFdI49tIs3tBhklzmZoMi9WHZWw0T9IONbkulBdbBpvHbuQWyDUgvFcJsRa9OFq3TOvLUXBnmSYM7V2wkQ2hGxQubStxh7wBUXMkYQnwEZqHdupJvC7p5yPMcrM9nqwNpWUKwQ0nrJGJSTPLE4fZOVST4BBWe_5U3bOk7RRearhqRkrr3HCbom9VuRj2d9okcqM4VRzYCoQxNDKkozdELM-syAx82mgZM-fyYTRhKaJRCfIaqCl41dFXB4c2bBWAVuNtcWFiVrPPraQNDvPgGm7wwoL92BVbBkD5zb5qaDZbBi4y-PeeAD166rxHcoIVHdSbuWzY9MOLrd-gHRFjTw-nGT2AZxVP80QFpm9XkfINN-pc4jD1o6i9NOfcvZOc07aOFPFli6BzEx9OXOvA0qSYZOJJS2cHrIZ4Z6EwAMKqdPN2eveA3MnL-gxY6hcgpXT1C7-F6E6HAyXb7M4CQ79mQpGfL6sx1sa85ET7kfbkH_4rcWE07G1Jktu6SxRA-PQ4Yj2vb5fld5ixcNgZ4nsqyK8Gm0hPYXkAMK5VY-vx2x7Siqj5bTnHx_iCW_B9S0-ODyBjQCs2plFKVanjx2V8GiSZyChyKvHiInHAR-g7LnRCQ5LlsYh4dS79Ur9QHm3Jb9iHKOwWyPyGTLSI64FBTOLBv26D3BUXJCJKYiwKlm2QevNdwPWb5B169SuHtUNflGZZFW_jx4aGjuzUTfS30awLWojc3wlRs1rF1rvd4XCaXYVnkuw-fGLt24aiLoUvWGaHGEsG1CXzQe-bxR0Qv35a6aO7B963hcZz_dLaMGISBpPD0GGUGJPe1hDN0SZxE4b4-F7JRLiEZhkB6l2k0w1jM-TquhxQ3yOq-882zHlFfiyKcm9UjipJq6gz4lLdKejZ7_Pt-uuvP__6w63PvE9a8fxqmmWQH38xnCE1eQNzDxRoGb69JIo7Zyy4VeTjI2UJEsqhldAh1fLqEZnIhCDvRvz-WQ1sr-EdbiRpmo1vkI_1XENpHnVU5PgW9SlK0r8sXrk8U0SHb910BhOJW9mn9l3pMdiN02gUdh-9LPX6HcG66YZ_CI3ArHZ9WrTnAoVfLPZ7q_jwCZ096Najbr59Hv3ajuyLJa41MsJfQnFTZ-3DpP5Y-jTG5-y-H3DyLQ0Lobhqg_BWOSaZedQku2cRKXRB2ks4lNVUCIw2c6k8OcndOl9dx_PbxD8D6Eyh6nEehncj55D9MsNLE95G71WmNKd641GEpb2RwMde95qzxFZGjVUQ-wfmZ66LVfn8UKY1DM7Gl2gBJqyXp3_iSTmZv6e8phrT_ViL39gBbQorq87N8ddu9F--NWIHtYP1hlWqopfRq-pDR-LhmPLSy4WJEwagJ3AFx1JTTARdXZLnaycDsgT9LZN0USW_QiDcVbR-oPPRk9_lKTi5bmjPt4HPzz7eSkNFoPjM0AlDvnGRkWnsp5O3CrxBgLQfUYKzNmuCBWTiaBtWCpN32uNahofo-qzJ6X5l_DYp5QOyRq-Zd1GyU3I-28c_6oROJ5RAvEKbeGCtnrGPgib39B0k-W2AmendkPfBtPZQcSmvWs-6Psq9BaFrb6ilFUqT5L9w5Gr5CziQwhJBiVZc842lrbrrDspGo-cZVhm2STqsL345IxgU07SjsCKwAywNz_-f8d__AQ1HAmOaDAAA",
+    "token": "H4...rf",
     "tokenId": "02ee3057-72a9-4a22-92b8-6de608135524",
     "expiration": "2019-03-05T03:05:36Z"
 }
 ```
+
+####Using the Power BI JavaScript API
+#####Overview
+To embed a Binokula Generated Power BI Report into your website you must use the Power BI JavaScript API. The JavaScript API will requires you to provide it with the Report ID, Embed URL and Embed Token. These can be obtain through the Binokula API as demonstrated in [Binokula Generated Report Properties API](../developer-guide/#binokula-generated-report-properties-api). 
+
+#####Embed Report Code
+To embed a report use the following code:
+
+```javascript
+// Get models. models contains enums that can be used.
+var models = window['powerbi-client'].models;
+
+var embedConfiguration = {
+	type: 'report',
+	id: '<<REPORT ID>>',
+	embedUrl: '<<EMBED URL>>',
+	tokenType: models.TokenType.Embed,
+	accessToken: '<<EMBED TOKEN>>'
+};
+
+var $reportContainer = $('#reportContainer');
+var report = powerbi.embed($reportContainer.get(0), embedConfiguration);
+```
+
+#####Embed Report with Mobile Configuration Code
+If the report has been designed with optomisations for mobile view then it is possible to embed the report in a mobile configuration. To embed a report using mobile configuration use the following code:
+
+```javascript
+// Get models. models contains enums that can be used.
+var models = window['powerbi-client'].models;
+
+var embedConfiguration = {
+	type: 'report',
+	id: '<<REPORT ID>>',
+	embedUrl: '<<EMBED URL>>',
+	tokenType: models.TokenType.Embed,
+	accessToken: '<<EMBED TOKEN>>',
+	settings: {
+            layoutType: models.LayoutType.MobilePortrait
+        }
+};
+
+var $reportContainer = $('#reportContainer');
+var report = powerbi.embed($reportContainer.get(0), embedConfiguration);
+```
+
+Note: If the report is embeded using this configuration and the report is not mobile Optomised then the default report view is used.
+
+**Reference**: [Microsoft Power BI JavaScript API Documentation](https://github.com/Microsoft/PowerBI-JavaScript/wiki)

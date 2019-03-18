@@ -344,6 +344,19 @@ Note: Binokula is not responsible for the security implemented on your independe
 #####Overview
 To embed a Binokula Generated Power BI Report into your website you must use the Power BI JavaScript API. The JavaScript API will requires you to provide it with the Report ID, Embed URL and Embed Token. These can be obtain through the Binokula API as demonstrated in [Binokula Generated Report Properties API](../developer-guide/#binokula-generated-report-properties-api). 
 
+#####Installing the Power BI JavaScript API
+Install via Nuget:
+
+`Install-Package Microsoft.PowerBI.JavaScript`
+
+Install from NPM:
+
+`npm install --save powerbi-client`
+
+Install from Bower:
+
+`bower install powerbi-client --save`
+
 #####Embed Report Code
 To embed a report use the following code:
 

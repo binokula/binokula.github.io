@@ -221,10 +221,6 @@ This endpoint gets the top 1000 records by descending order by default. Supply t
 * end_time **(optional)**
     * Any datetime string format
     * E.g. MM/dd/yyyy hh:mm tt
-* order **(optional)**
-    * Default: Descending
-    * asc/desc
-    * Order by timestamp
 * id **(optional)**
 * tenant
 * code

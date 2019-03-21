@@ -18,20 +18,13 @@ If you are expecting to already have access to reports in Binokula, you can ente
 
 ###Building and Publishing Reports
 ####Building a Report without RLS
+Binokula uses Microsoft Power BI as its report building tool. It is possible for a report to be published to Binokula without any RLS. For a report to be correctly published in Binokula without RLS, the report has to adhere to the following:
 
-> * RLS - Row-Level Security ensures that users see only the data they are authorized to see.
-
-Binokula uses Microsoft Power BI as its report building tool. For a report to be correctly published in Binokula, the report has to adhere to the following:
-
-* Must have a security role called "User_Security" in the Power BI Model.
-<details>
-  <summary>
-    Show "User_Security" example
-  </summary>
-  ![alt text](images/admin-guide/user_security_role.PNG "User_Security role")
-</details>
+* The User Security configuration must be set to ignored. This can be done through [Report Management](../admin-guide/#managing-reports) under Binokula Admin page.
 
 ####Building a Report with RLS
+> * RLS - Row-Level Security ensures that users see only the data they are authorized to see.
+
 Building a report with RLS requires that the report adhere to the following:
 
 * Must have a security role called "User_Security" in the Power BI Model.
@@ -149,6 +142,14 @@ User Management is done through the [user management link](https://binokula.app/
 Note:
 > * Users are automatically added when programmatically signed in with the [single-sign-on API](../developer-guide/#single-sign-on).
 > * Bulk adding, deleting, enabling or disabling more than one user at a time can be achieved programmatically by calling the [User Management API](../developer-guide/#user-management).
+
+###Managing Reports
+Report Management is done through the [report management link](https://binokula.app/Admin/Reports) in the admin portal. This interface will allow you to:
+
+* Delete a Report. 
+    * Note: If the report still exists within the Power BI Workspace the report will reappear within the next refresh.
+
+* Enforce/Ignore User Security Roles on the selected report
 
 ###User Groups
 User Group Management is done through [the user group link](https://binokula.app/Admin/UserGroups) in the admin portal. The User Group management page allows admins to:

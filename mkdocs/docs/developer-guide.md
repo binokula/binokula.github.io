@@ -234,15 +234,18 @@ This endpoint gets the top 1000 records by descending order by default. Supply t
 [{
     "timestamp": "2019-03-07T02:04:26.2046466",
     "user": "test@email.com",
-    "eventActivity": "report_view"
+    "eventActivity": "report_view",
+    "reportGUID": "2a9cfe63-a909-4791-845a-6500f0fac8aa"
 }, {
     "timestamp": "2019-03-07T02:04:16.8408495",
     "user": "test@email.com",
-    "eventActivity": "portal_login"
+    "eventActivity": "portal_login",
+    "reportGUID": null
 }, {
     "timestamp": "2019-03-07T00:13:37.3125127",
     "user": "test@email.com",
-    "eventActivity": "user_add"
+    "eventActivity": "user_add",
+    "reportGUID": null
 }]
 ```
 
@@ -271,7 +274,8 @@ Note: Binokula is not responsible for the security implemented on your independe
 
 **Parameters:**
 
-* email
+* email **(optional)**
+    * Default: Returns all reports 
 * tenant
 * code
     * This is a function key provided to the customer to access this endpoint

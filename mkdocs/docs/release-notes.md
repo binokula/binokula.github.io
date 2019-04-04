@@ -1,5 +1,10 @@
 # Release Notes ![](images/favicon.png)
 
+###April 3, 2019
+####Enhancements
+* Reports that exist in your tenant but do not exist in your Power BI Workspace will be indicated on Admin Report Management.
+* [User Activity Binokula API Endpoint](../developer-guide/#user-activity-list) now returns Report GUIDS on report_view.
+
 ###March 8, 2019
 ####New
 * [Embedding Binokula generated reports into your own website](../developer-guide/#embedding-binokula-generated-reports). Developers can now embed Binokula generated reports into their own websites using the Power BI JavaScript API. The new Binokula API endpoints can provide developers with Report ID, Embedded URL and Embed Token in order to use the Power BI JavaScript API.

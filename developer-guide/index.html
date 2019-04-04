@@ -968,15 +968,18 @@
 <div class="highlight"><pre><span></span><span class="p">[{</span>
     <span class="nt">&quot;timestamp&quot;</span><span class="p">:</span> <span class="s2">&quot;2019-03-07T02:04:26.2046466&quot;</span><span class="p">,</span>
     <span class="nt">&quot;user&quot;</span><span class="p">:</span> <span class="s2">&quot;test@email.com&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;eventActivity&quot;</span><span class="p">:</span> <span class="s2">&quot;report_view&quot;</span>
+    <span class="nt">&quot;eventActivity&quot;</span><span class="p">:</span> <span class="s2">&quot;report_view&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;reportGUID&quot;</span><span class="p">:</span> <span class="s2">&quot;2a9cfe63-a909-4791-845a-6500f0fac8aa&quot;</span>
 <span class="p">},</span> <span class="p">{</span>
     <span class="nt">&quot;timestamp&quot;</span><span class="p">:</span> <span class="s2">&quot;2019-03-07T02:04:16.8408495&quot;</span><span class="p">,</span>
     <span class="nt">&quot;user&quot;</span><span class="p">:</span> <span class="s2">&quot;test@email.com&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;eventActivity&quot;</span><span class="p">:</span> <span class="s2">&quot;portal_login&quot;</span>
+    <span class="nt">&quot;eventActivity&quot;</span><span class="p">:</span> <span class="s2">&quot;portal_login&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;reportGUID&quot;</span><span class="p">:</span> <span class="kc">null</span>
 <span class="p">},</span> <span class="p">{</span>
     <span class="nt">&quot;timestamp&quot;</span><span class="p">:</span> <span class="s2">&quot;2019-03-07T00:13:37.3125127&quot;</span><span class="p">,</span>
     <span class="nt">&quot;user&quot;</span><span class="p">:</span> <span class="s2">&quot;test@email.com&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;eventActivity&quot;</span><span class="p">:</span> <span class="s2">&quot;user_add&quot;</span>
+    <span class="nt">&quot;eventActivity&quot;</span><span class="p">:</span> <span class="s2">&quot;user_add&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;reportGUID&quot;</span><span class="p">:</span> <span class="kc">null</span>
 <span class="p">}]</span>
 </pre></div>
 
@@ -1000,7 +1003,10 @@
 </ul>
 <p><strong>Parameters:</strong></p>
 <ul>
-<li>email</li>
+<li>email <strong>(optional)</strong><ul>
+<li>Default: Returns all reports </li>
+</ul>
+</li>
 <li>tenant</li>
 <li>code<ul>
 <li>This is a function key provided to the customer to access this endpoint</li>

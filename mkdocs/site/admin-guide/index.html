@@ -312,6 +312,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#managing-reports" title="Managing Reports" class="md-nav__link">
+    Managing Reports
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#user-groups" title="User Groups" class="md-nav__link">
     User Groups
   </a>
@@ -541,6 +548,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#managing-reports" title="Managing Reports" class="md-nav__link">
+    Managing Reports
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#user-groups" title="User Groups" class="md-nav__link">
     User Groups
   </a>
@@ -619,22 +633,16 @@
 <p>If you are expecting to already have access to reports in Binokula, you can enter your email address at <a href="https://binokula.app">https://binokula.app</a> or contact the organization whose report content you wish to access.</p>
 <h3 id="building-and-publishing-reports">Building and Publishing Reports</h3>
 <h4 id="building-a-report-without-rls">Building a Report without RLS</h4>
+<p>Binokula uses Microsoft Power BI as its report building tool. It is possible for a report to be published to Binokula without any RLS. For a report to be correctly published in Binokula without RLS, the report has to adhere to the following:</p>
+<ul>
+<li>The User Security configuration must be set to ignored. This can be done through <a href="../admin-guide/#managing-reports">Report Management</a> under Binokula Admin page.</li>
+</ul>
+<h4 id="building-a-report-with-rls">Building a Report with RLS</h4>
 <blockquote>
 <ul>
 <li>RLS - Row-Level Security ensures that users see only the data they are authorized to see.</li>
 </ul>
 </blockquote>
-<p>Binokula uses Microsoft Power BI as its report building tool. For a report to be correctly published in Binokula, the report has to adhere to the following:</p>
-<ul>
-<li>Must have a security role called "User_Security" in the Power BI Model.
-<details>
-  <summary>
-    Show "User_Security" example
-  </summary>
-  <img alt="alt text" src="../images/admin-guide/user_security_role.PNG" title="User_Security role" />
-</details></li>
-</ul>
-<h4 id="building-a-report-with-rls">Building a Report with RLS</h4>
 <p>Building a report with RLS requires that the report adhere to the following:</p>
 <ul>
 <li>Must have a security role called "User_Security" in the Power BI Model.
@@ -757,6 +765,19 @@ You should now only see data that the test user should see.</li>
 <li>Bulk adding, deleting, enabling or disabling more than one user at a time can be achieved programmatically by calling the <a href="../developer-guide/#user-management">User Management API</a>.</li>
 </ul>
 </blockquote>
+<h3 id="managing-reports">Managing Reports</h3>
+<p>Report Management is done through the <a href="https://binokula.app/Admin/Reports">report management link</a> in the admin portal. This interface will allow you to:</p>
+<ul>
+<li>
+<p>Delete a Report. </p>
+<ul>
+<li>Note: If the report still exists within the Power BI Workspace the report will reappear within the next refresh.</li>
+</ul>
+</li>
+<li>
+<p>Enforce/Ignore User Security Roles on the selected report</p>
+</li>
+</ul>
 <h3 id="user-groups">User Groups</h3>
 <p>User Group Management is done through <a href="https://binokula.app/Admin/UserGroups">the user group link</a> in the admin portal. The User Group management page allows admins to:</p>
 <ul>

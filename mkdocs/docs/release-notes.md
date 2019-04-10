@@ -1,5 +1,10 @@
 # Release Notes ![](images/favicon.png)
 
+###April 10, 2019
+####New
+* Color theme to match our all new brochure site at [Binokula.com](https://binokula.com)
+* Admins can now set their organization name through portal settings. Organization names will be used in automated emails sent out to users and other front facing features that labels your tenant.
+
 ###April 3, 2019
 ####Enhancements
 * Reports that exist in your tenant but do not exist in your Power BI Workspace will be indicated on Admin Report Management.

@@ -96,6 +96,14 @@ Power BI Mobile is supported by Binokula. All you need to do is create the mobil
   ![alt text](images/admin-guide/phone_layout.PNG "Phone Layout example")
 </details>
 
+###Managing Tenant details
+
+####Assigning your organization name to your tenant
+Your organization name will be used in automated emails sent out to users and other front facing features that labels your tenant.
+
+1. Navigate to the Admin Page and click "Portal Settings"
++ Under the field "Organization Name" enter the name of your organization.
++ Click save.
 
 ###Managing access to reports in Binokula
 Any new reports published are by default not accessible to any users. Access to reports is controlled through Report Groups. To give yourself access to view a report, you will need to be an administrator and complete the following in Binokula:

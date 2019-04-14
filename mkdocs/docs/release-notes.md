@@ -4,6 +4,8 @@
 ####New
 * Color theme to match our all new brochure site at [Binokula.com](https://binokula.com)
 * Admins can now set their organization name through portal settings. Organization names will be used in automated emails sent out to users and other front facing features that labels your tenant.
+####Enhancements
+* Failed login attempts by a user is now limited to 5. After 5 failed attempts the user will be timed out for 30 minutes.
 
 ###April 3, 2019
 ####Enhancements

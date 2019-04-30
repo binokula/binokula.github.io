@@ -1,5 +1,12 @@
 # Release Notes ![](images/favicon.png)
 
+###April [30], 2019
+####New
+* Admins can sort by columns in the User Management, Report Group, and User Group pages.
+* Search functions are now available in the Report Group and User Group pages.
+####Enhancements
+* All Admin checkbox forms have been replaced by tables with clickable actions beside them. This increases app performance and speed. 
+
 ###April 10, 2019
 ####New
 * Color theme to match our all new brochure site at [Binokula.com](https://binokula.com)

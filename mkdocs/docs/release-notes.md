@@ -1,6 +1,6 @@
 # Release Notes ![](images/favicon.png)
 
-###April [30], 2019
+###April 30, 2019
 ####New
 * Admins can sort by columns in the User Management, Report Group, and User Group pages.
 * Search functions are now available in the Report Group and User Group pages.

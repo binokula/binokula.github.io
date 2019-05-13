@@ -64,6 +64,33 @@ Once you have configured the RLS as shown above, you can test the security by im
 </details>
 You should now only see data that the test user should see.
 
+####Power BI Workspaces
+Binokula supports multiple Power BI workspaces. This means any Power BI report can be published into any workspaces under your tenants publisher account. To ensure your report appears on Binokula, your tenants admin account must be a member of the workspace.
+
+To include your tenants admin to your selected workspace:
+
+1. Log into [powerbi.com](https://app.powerbi.com/) as your assigned publisher account.
+* Navigate to your chosen workspace.
+* At the top click "Access".
+<details>
+  <summary>
+    Workspace access button
+  </summary>
+  ![Workspace access button](images/admin-guide/workspace_access.PNG "Workspace access button")
+</details>
+
+* In the Email search bar start typing admin. Your tenants admin account will have the same domain as your publisher account.
+* In the drop down menu select "Member".
+* Click Add.
+<details>
+  <summary>
+    Add admin to workspace
+  </summary>
+  ![Add admin to workspace screenshot](images/admin-guide/add_admin_to_workspace.PNG "Add admin to workspace")
+</details>
+
+* Reports within that workspace will now be available in Binokula after a Report Refresh in the Binokula Admin portal.
+
 ####Publishing Power BI Reports
 Once you have built and tested your Power BI report, the next step is to publish the report to your dedicated Tenant. This is done with the unique publisher account, details you would have received as part of requesting your Binokula Tenant. You can sign-in with the publisher account by clicking on "Sign in" in Power BI Desktop. If you are already signed in with a different account, click on the account name and select "Switch account". Once you are signed in, you can publish the report by:
 

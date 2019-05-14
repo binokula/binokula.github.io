@@ -1,5 +1,11 @@
 # Release Notes ![](images/favicon.png)
 
+###May 13, 2019
+####New
+* Binokula now supports multiple Power BI workspaces. Reports in located within different workspaces will now appear on Binokula. Workspaces will have to have your respective tenants [admin account as a member](../admin-guide/#power-bi-workspaces) of the workspace.
+####Enhancements
+* Admin reports are now embedded into the admin portal. Admins do not need to SSO into the admin tenant to view admin reports.
+
 ###April 30, 2019
 ####New
 * Admins can sort by columns in the User Management, Report Group, and User Group pages.

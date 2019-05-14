@@ -252,6 +252,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#power-bi-workspaces" title="Power BI Workspaces" class="md-nav__link">
+    Power BI Workspaces
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#publishing-power-bi-reports" title="Publishing Power BI Reports" class="md-nav__link">
     Publishing Power BI Reports
   </a>
@@ -508,6 +515,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#power-bi-workspaces" title="Power BI Workspaces" class="md-nav__link">
+    Power BI Workspaces
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#publishing-power-bi-reports" title="Publishing Power BI Reports" class="md-nav__link">
     Publishing Power BI Reports
   </a>
@@ -721,6 +735,38 @@
   <img alt="alt text" src="../images/admin-guide/test_security.PNG" title="Test security example" />
 </details>
 You should now only see data that the test user should see.</li>
+</ol>
+<h4 id="power-bi-workspaces">Power BI Workspaces</h4>
+<p>Binokula supports multiple Power BI workspaces. This means any Power BI report can be published into any workspaces under your tenants publisher account. To ensure your report appears on Binokula, your tenants admin account must be a member of the workspace.</p>
+<p>To include your tenants admin to your selected workspace:</p>
+<ol>
+<li>Log into <a href="https://app.powerbi.com/">powerbi.com</a> as your assigned publisher account.</li>
+<li>Navigate to your chosen workspace.</li>
+<li>
+<p>At the top click "Access".
+<details>
+  <summary>
+    Workspace access button
+  </summary>
+  <img alt="Workspace access button" src="../images/admin-guide/workspace_access.PNG" title="Workspace access button" />
+</details></p>
+</li>
+<li>
+<p>In the Email search bar start typing admin. Your tenants admin account will have the same domain as your publisher account.</p>
+</li>
+<li>In the drop down menu select "Member".</li>
+<li>
+<p>Click Add.
+<details>
+  <summary>
+    Add admin to workspace
+  </summary>
+  <img alt="Add admin to workspace screenshot" src="../images/admin-guide/add_admin_to_workspace.PNG" title="Add admin to workspace" />
+</details></p>
+</li>
+<li>
+<p>Reports within that workspace will now be available in Binokula after a Report Refresh in the Binokula Admin portal.</p>
+</li>
 </ol>
 <h4 id="publishing-power-bi-reports">Publishing Power BI Reports</h4>
 <p>Once you have built and tested your Power BI report, the next step is to publish the report to your dedicated Tenant. This is done with the unique publisher account, details you would have received as part of requesting your Binokula Tenant. You can sign-in with the publisher account by clicking on "Sign in" in Power BI Desktop. If you are already signed in with a different account, click on the account name and select "Switch account". Once you are signed in, you can publish the report by:</p>

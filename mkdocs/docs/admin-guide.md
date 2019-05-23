@@ -166,6 +166,7 @@ User Management is done through the [user management link](https://binokula.app/
 * Enable/disable users
 * Enable/disable admins
 * Reset passwords
+* Test Users
 
 <details>
   <summary>
@@ -177,6 +178,19 @@ User Management is done through the [user management link](https://binokula.app/
 Note:
 > * Users are automatically added when programmatically signed in with the [single-sign-on API](../developer-guide/#single-sign-on).
 > * Bulk adding, deleting, enabling or disabling more than one user at a time can be achieved programmatically by calling the [User Management API](../developer-guide/#user-management).
+
+####Testing Users
+It is possible to test users under your tenant. Admins can imitate users in their tenant through [user management](https://binokula.app/Admin/Users). 
+Simply click the "Test User" link under the associated user and follow the instructions on the prompt that displays.
+
+<details>
+  <summary>
+    Testing Users
+  </summary>
+  ![alt text](images/admin-guide/test_user.PNG "User management functions")
+</details>
+
+A message will prompt you to copy a link into a private or incognito browser to ensure you don't lose your current Binokula psession.
 
 ###Managing Reports
 Report Management is done through the [report management link](https://binokula.app/Admin/Reports) in the admin portal. This interface will allow you to:

@@ -237,3 +237,22 @@ Admins have the option of enabling username aliasing to their users. Users can s
 + Click "Edit RLS Alias" on the users row. This will take you to the Edit Page.
 + Check the checkbox to enable their alias or uncheck to disable alias
 + Click the "Save" button to save your changes
+
+###Custom Emails
+It is possible to customize invitation emails to your users. An example of a customized email can be found below.
+
+1. Navigate to the Admin page then select "Portal Settings".
++ Click on to the "Customize Email Invite (Advanced)" link.
++ Fill in the form.
+    1. Use Binokula Logo - Include Binokula branding within your custom email.
+    + Header - The title of your custom email.
+    + Body - Your main message of the custom email.
+    + Enable Custom Email checkbox - Use your custom email. Default email is used if unticked.
++ Click Save.
+
+<details>
+  <summary>
+    Custom email example
+  </summary>
+  ![alt text](images/admin-guide/custom_email.PNG "Custom Email Example")
+</details>

@@ -13,6 +13,25 @@ Your Client is used to access Binokula's API endpoints. Your tenants Client Secr
 
 From there you can copy the Client Secret and start using Binokula APIs!
 
+####Managing Client Secrets
+It is possible to have multiple client secrets. If you feel that a current client secret has been comprimised then you can delete it and generate new ones. 
+
+To manage your client secrets:
+
+1. Navigate to the Administrator page
++ Go to Portal Settings
++ Click "Client Secret Options"
+<details>
+  <summary>
+    Client Secret Options
+  </summary>
+  ![alt text](images/developer-guide/client_secret_options.PNG "Client Secret Options")
+</details>
+
++ From there you can delete client secrets and generate new ones by clicking the "Generate New Client Secret" button
+
+Note: Each tenant must have atleast 1 client secret
+
 ###Single-Sign On
 ####Overview
 Single-Sign On (SSO) enables external applications to give users access to Binokula without the need for them to enter their Binokula password. Access to Binokula is gained with the combination of a user's email address and a securely generated access token. The access token is valid for one hour and can be refreshed using the API. Binokula will check if the users email is registered as a system user and if the access token is valid before granting access to the application. If authentication fails, a redirect to the Binokula login page will be executed. Only one user token can be active at any given time.

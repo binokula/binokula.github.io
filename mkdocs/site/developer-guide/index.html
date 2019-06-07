@@ -232,6 +232,19 @@
     Client Secret
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#managing-client-secrets" title="Managing Client Secrets" class="md-nav__link">
+    Managing Client Secrets
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -516,6 +529,19 @@
     Client Secret
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#managing-client-secrets" title="Managing Client Secrets" class="md-nav__link">
+    Managing Client Secrets
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -750,6 +776,26 @@
 <li>Find the label Client Secret and click "Show Client Secret"</li>
 </ol>
 <p>From there you can copy the Client Secret and start using Binokula APIs!</p>
+<h4 id="managing-client-secrets">Managing Client Secrets</h4>
+<p>It is possible to have multiple client secrets. If you feel that a current client secret has been comprimised then you can delete it and generate new ones. </p>
+<p>To manage your client secrets:</p>
+<ol>
+<li>Navigate to the Administrator page</li>
+<li>Go to Portal Settings</li>
+<li>
+<p>Click "Client Secret Options"
+<details>
+  <summary>
+    Client Secret Options
+  </summary>
+  <img alt="alt text" src="../images/developer-guide/client_secret_options.PNG" title="Client Secret Options" />
+</details></p>
+</li>
+<li>
+<p>From there you can delete client secrets and generate new ones by clicking the "Generate New Client Secret" button</p>
+</li>
+</ol>
+<p>Note: Each tenant must have atleast 1 client secret</p>
 <h3 id="single-sign-on">Single-Sign On</h3>
 <h4 id="overview">Overview</h4>
 <p>Single-Sign On (SSO) enables external applications to give users access to Binokula without the need for them to enter their Binokula password. Access to Binokula is gained with the combination of a user's email address and a securely generated access token. The access token is valid for one hour and can be refreshed using the API. Binokula will check if the users email is registered as a system user and if the access token is valid before granting access to the application. If authentication fails, a redirect to the Binokula login page will be executed. Only one user token can be active at any given time.</p>

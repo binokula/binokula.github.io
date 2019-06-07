@@ -166,6 +166,7 @@ User Management is done through the [user management link](https://binokula.app/
 * Enable/disable users
 * Enable/disable admins
 * Reset passwords
+* Test Users
 
 <details>
   <summary>
@@ -177,6 +178,19 @@ User Management is done through the [user management link](https://binokula.app/
 Note:
 > * Users are automatically added when programmatically signed in with the [single-sign-on API](../developer-guide/#single-sign-on).
 > * Bulk adding, deleting, enabling or disabling more than one user at a time can be achieved programmatically by calling the [User Management API](../developer-guide/#user-management).
+
+####Testing Users
+It is possible to test users under your tenant. Admins can imitate users in their tenant through [user management](https://binokula.app/Admin/Users). 
+Simply click the "Test User" link under the associated user and follow the instructions on the prompt that displays.
+
+<details>
+  <summary>
+    Testing Users
+  </summary>
+  ![alt text](images/admin-guide/test_user.PNG "User management functions")
+</details>
+
+A message will prompt you to copy a link into a private or incognito browser to ensure you don't lose your current Binokula psession.
 
 ###Managing Reports
 Report Management is done through the [report management link](https://binokula.app/Admin/Reports) in the admin portal. This interface will allow you to:
@@ -223,3 +237,22 @@ Admins have the option of enabling username aliasing to their users. Users can s
 + Click "Edit RLS Alias" on the users row. This will take you to the Edit Page.
 + Check the checkbox to enable their alias or uncheck to disable alias
 + Click the "Save" button to save your changes
+
+###Custom Emails
+It is possible to customize invitation emails to your users. An example of a customized email can be found below.
+
+1. Navigate to the Admin page then select "Portal Settings".
++ Click on to the "Customize Email Invite (Advanced)" link.
++ Fill in the form.
+    1. Use Binokula Logo - Include Binokula branding within your custom email.
+    + Header - The title of your custom email.
+    + Body - Your main message of the custom email.
+    + Enable Custom Email checkbox - Use your custom email. Default email is used if unticked.
++ Click Save.
+
+<details>
+  <summary>
+    Custom email example
+  </summary>
+  ![alt text](images/admin-guide/custom_email.PNG "Custom Email Example")
+</details>

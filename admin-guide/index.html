@@ -2,7 +2,7 @@
 
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="no-js">
   <head>
     
@@ -32,7 +32,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
     
     
       
@@ -40,23 +40,27 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.0284f74d.css">
       
       
     
     
-      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
     <link rel="stylesheet" href="../assets/fonts/material-icons.css">
     
+    
       <link rel="stylesheet" href="https://unpkg.com/mermaid@7.1.2/dist/mermaid.css">
+    
+    
+      
     
     
   </head>
@@ -73,7 +77,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="../#admin-guide" tabindex="1" class="md-skip">
+      <a href="#admin-guide" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -94,22 +98,21 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                Binokula Documentation
-              </span>
-              <span class="md-header-nav__topic">
+            <span class="md-header-nav__topic">
+              Binokula Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
                 Admin Guide
-              </span>
-            
+              
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -132,7 +135,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -342,6 +344,13 @@
           <li class="md-nav__item">
   <a href="#testing-users" title="Testing Users" class="md-nav__link">
     Testing Users
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#report-sharing-permissions" title="Report Sharing Permissions" class="md-nav__link">
+    Report Sharing Permissions
   </a>
   
 </li>
@@ -629,6 +638,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#report-sharing-permissions" title="Report Sharing Permissions" class="md-nav__link">
+    Report Sharing Permissions
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -884,15 +900,17 @@ You should now only see data that the test user should see.</li>
 <li>Delete users</li>
 <li>Enable/disable users</li>
 <li>Enable/disable admins</li>
+<li>Enable/disable report sharing</li>
 <li>Reset passwords</li>
 <li>Test Users</li>
 </ul>
-<p><details>
+<details>
   <summary>
     User management functions
   </summary>
-  <img alt="alt text" src="../images/admin-guide/user_functions.PNG" title="User management functions" />
-</details></p>
+  ![alt text](images/admin-guide/user_functions.PNG "User management functions")
+</details>
+
 <p>Note:</p>
 <blockquote>
 <ul>
@@ -903,13 +921,16 @@ You should now only see data that the test user should see.</li>
 <h4 id="testing-users">Testing Users</h4>
 <p>It is possible to test users under your tenant. Admins can imitate users in their tenant through <a href="https://binokula.app/Admin/Users">user management</a>. 
 Simply click the "Test User" link under the associated user and follow the instructions on the prompt that displays.</p>
-<p><details>
+<details>
   <summary>
     Testing Users
   </summary>
-  <img alt="alt text" src="../images/admin-guide/test_user.PNG" title="User management functions" />
-</details></p>
-<p>A message will prompt you to copy a link into a private or incognito browser to ensure you don't lose your current Binokula psession.</p>
+  ![alt text](images/admin-guide/test_user.PNG "User management functions")
+</details>
+
+<p>A message will prompt you to copy a link into a private or incognito browser to ensure you don't lose your current Binokula session.</p>
+<h4 id="report-sharing-permissions">Report Sharing Permissions</h4>
+<p>Admins have the ability to grant users the ability to share their reports via a link. This shared link is secured and only people who have the generated link can view the report. The shared report will be have the same view as the user who shared the link. When the report sharing is disabled for a user, all existing shared links for each report will become invalid.</p>
 <h3 id="managing-reports">Managing Reports</h3>
 <p>Report Management is done through the <a href="https://binokula.app/Admin/Reports">report management link</a> in the admin portal. This interface will allow you to:</p>
 <ul>
@@ -932,12 +953,13 @@ Simply click the "Test User" link under the associated user and follow the instr
 <li>Assign existing users to the group</li>
 <li>Assign the User Group to one or multiple report groups</li>
 </ul>
-<p><details>
+<details>
   <summary>
     User group functions
   </summary>
-  <img alt="alt text" src="../images/admin-guide/user_group.PNG" title="User group functions" />
-</details></p>
+  ![alt text](images/admin-guide/user_group.PNG "User group functions")
+</details>
+
 <h4 id="user-group-structure">User Group Structure</h4>
 <p>Users within a User Group can be assigned to a Report Group. This function allows easier assignment and reassignment of multiple users to reports.</p>
 <p><img alt="alt text" src="../images/admin-guide/user_group_diagram.png" title="User group diagram" /></p>
@@ -973,12 +995,12 @@ Simply click the "Test User" link under the associated user and follow the instr
 </li>
 <li>Click Save.</li>
 </ol>
-<p><details>
+<details>
   <summary>
     Custom email example
   </summary>
-  <img alt="alt text" src="../images/admin-guide/custom_email.PNG" title="Custom Email Example" />
-</details></p>
+  ![alt text](images/admin-guide/custom_email.PNG "Custom Email Example")
+</details>
                 
                   
                 
@@ -1042,22 +1064,17 @@ Simply click the "Test User" link under the associated user and follow the instr
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.583bbe55.js"></script>
+      <script src="../assets/javascripts/application.245445c6.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
         <script src="https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js"></script>
-      
-    
-    
       
     
   </body>

@@ -165,6 +165,7 @@ User Management is done through the [user management link](https://binokula.app/
 * Delete users
 * Enable/disable users
 * Enable/disable admins
+* Enable/disable report sharing
 * Reset passwords
 * Test Users
 
@@ -190,7 +191,10 @@ Simply click the "Test User" link under the associated user and follow the instr
   ![alt text](images/admin-guide/test_user.PNG "User management functions")
 </details>
 
-A message will prompt you to copy a link into a private or incognito browser to ensure you don't lose your current Binokula psession.
+A message will prompt you to copy a link into a private or incognito browser to ensure you don't lose your current Binokula session.
+
+####Report Sharing Permissions
+Admins have the ability to grant users the ability to share their reports via a link. This shared link is secured and only people who have the generated link can view the report. The shared report will be have the same view as the user who shared the link. When the report sharing is disabled for a user, all existing shared links for each report will become invalid.
 
 ###Managing Reports
 Report Management is done through the [report management link](https://binokula.app/Admin/Reports) in the admin portal. This interface will allow you to:

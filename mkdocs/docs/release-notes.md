@@ -1,5 +1,16 @@
 # Release Notes ![](images/favicon.png)
 
+###July 2, 2019
+####New 
+* Admins can now enable certain users to [share their view on reports](../admin-guide/#report-sharing-permissions) via unique link. Reports still contain RLS and are shared securely.
+####Enhancements
+* Reports within Binokula no longer timeout after a period of time.
+
+###May 30, 2019
+####New 
+* Support of [multiple client secrets](../developer-guide/#managing-client-secrets) are introduced. Admins can now delete existing client secrets and generate new client secrets.
+* [Custom Binokula invite emails](/admin-guide/#custom-emails). Admins can now choose what message their invite email contains to send out to users.
+
 ###May 13, 2019
 ####New
 * Binokula now supports multiple Power BI workspaces. Reports in located within different workspaces will now appear on Binokula. Workspaces will have to have your respective tenants [admin account as a member](../admin-guide/#power-bi-workspaces) of the workspace.

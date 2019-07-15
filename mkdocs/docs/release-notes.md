@@ -1,5 +1,9 @@
 # Release Notes ![](images/favicon.png)
 
+###July 15, 2019
+####New 
+* Dataset refresh history can now be viewed through the Admin Portal under "Portal Settings". Refresh history shows the last 10 refreshes. 
+
 ###July 2, 2019
 ####New 
 * Admins can now enable certain users to [share their view on reports](../admin-guide/#report-sharing-permissions) via unique link. Reports still contain RLS and are shared securely.

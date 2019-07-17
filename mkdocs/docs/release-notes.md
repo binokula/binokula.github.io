@@ -2,7 +2,8 @@
 
 ###July 15, 2019
 ####New 
-* Dataset refresh history can now be viewed through the Admin Portal under "Portal Settings". Refresh history shows the last 10 refreshes. 
+* Dataset refresh history can now be viewed through the Admin Portal under "Portal Settings". Refresh history shows the last 10 refreshes.
+* Report ID can be passed as a parameter in the [SSO redirect](../developer-guide/#redirect-to-binokula-external-access). This allows users to be directed straight to desired reports.
 
 ###July 2, 2019
 ####New 

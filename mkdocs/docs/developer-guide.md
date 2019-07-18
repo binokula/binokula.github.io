@@ -98,6 +98,8 @@ RLS Aliasing Notes:
 * email
 * access_token
 * tenant
+* reportId **(optional)**
+    * To redirect straight to the desired report
 
 **Response:**
 

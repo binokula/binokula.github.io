@@ -35,6 +35,7 @@ Building a report with RLS requires that the report adhere to the following:
   ![alt text](images/admin-guide/user_security_role.PNG "User_Security role")
 </details>
 * Must have a DAX filter on the Entity to User Mapping List which uses the USERNAME() function.
+* The table the DAX filter is on must contain the list of the users emails.
 <details>
   <summary>
     Show USERNAME() example

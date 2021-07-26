@@ -1,5 +1,10 @@
 # Release Notes ![](images/favicon.png)
 
+###July 24, 2021
+####New 
+* The colour of the Binokula bar can be customised. The setting is on the ‘Administration / Portal Settings’ page.
+* The user ‘signed in as’ can be viewed by placing the mouse pointer under the Binokula logo at the bottom of the Binokula bar.
+
 ###July 15, 2019
 ####New 
 * Dataset refresh history can now be viewed through the Admin Portal under "Portal Settings". Refresh history shows the last 10 refreshes.

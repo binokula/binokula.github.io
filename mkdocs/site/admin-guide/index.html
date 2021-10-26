@@ -361,6 +361,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#report-export-permissions" class="md-nav__link">
+    Report Export Permissions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#report-sharing-permissions" class="md-nav__link">
     Report Sharing Permissions
   </a>
@@ -429,6 +436,13 @@
         <li class="md-nav__item">
   <a href="#custom-emails" class="md-nav__link">
     Custom Emails
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-binokula-bar-colour" class="md-nav__link">
+    Custom Binokula Bar Colour
   </a>
   
 </li>
@@ -665,6 +679,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#report-export-permissions" class="md-nav__link">
+    Report Export Permissions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#report-sharing-permissions" class="md-nav__link">
     Report Sharing Permissions
   </a>
@@ -737,6 +758,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#custom-binokula-bar-colour" class="md-nav__link">
+    Custom Binokula Bar Colour
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -779,46 +807,31 @@
 <ul>
 <li>Must have a security role called "User_Security" in the Power BI Model.</li>
 </ul>
-<details>
-  <summary>
-    Show "User_Security" example
-  </summary>
-  ![alt text](images/admin-guide/user_security_role.PNG "User_Security role")
-</details>
+<p>Show "User_Security" example
+ <img alt="alt text" src="../images/admin-guide/user_security_role.PNG" title="User_Security role" /></p>
 <ul>
 <li>Must have a DAX filter on the Entity to User Mapping List which uses the USERNAME() function.</li>
-<li>The table the DAX filter is on must contain the list of the users emails.</li>
+<li>
+<p>The table the DAX filter is on must contain the list of the users emails.
+  Show USERNAME() example
+  <img alt="alt text" src="../images/admin-guide/username_filter.PNG" title="USERNAME() filter" /></p>
+</li>
+<li>
+<p>Cross filter direction should be set to Both for the relationship with Entity to User Mapping List</p>
+</li>
+<li>Apply security filter in both directions should be ticked for the relationship with Entity to User Mapping List
+  Show Cross Filter and Apply Security Fiter Both example
+  <img alt="alt text" src="../images/admin-guide/filter_both_tick.PNG" title="Both filter example" /></li>
 </ul>
-<details>
-  <summary>
-    Show USERNAME() example
-  </summary>
-  ![alt text](images/admin-guide/username_filter.PNG "USERNAME() filter")
-</details>
-<ul>
-<li>Cross filter direction should be set to Both for the relationship with Entity to User Mapping List</li>
-<li>Apply security filter in both directions should be ticked for the relationship with Entity to User Mapping List</li>
-</ul>
-<details>
-  <summary>
-    Show Cross Filter and Apply Security Fiter Both example
-  </summary>
-  ![alt text](images/admin-guide/filter_both_tick.PNG "Both filter example")
-</details>
-
 <h4 id="testing-power-bi-rls">Testing Power BI RLS</h4>
 <p>Once you have configured the RLS as shown above, you can test the security by impersonating a user. To do this:</p>
 <ol>
 <li>Click "View as Roles" in Power BI Desktop;</li>
 <li>Tick "Other User" and enter the test user's email address; and</li>
-<li>Tick "User_Security" and click OK.</li>
+<li>Tick "User_Security" and click OK.
+ Show "View as Roles" screen
+ <img alt="alt text" src="../images/admin-guide/test_security.PNG" title="Test security example" /></li>
 </ol>
-<details>
-  <summary>
-    Show "View as Roles" screen
-  </summary>
-  ![alt text](images/admin-guide/test_security.PNG "Test security example")
-</details>
 <p>You should now only see data that the test user should see.</p>
 <h4 id="power-bi-workspaces">Power BI Workspaces</h4>
 <p>Binokula supports multiple Power BI workspaces. This means any Power BI report can be published into any workspaces under your tenants publisher account. To ensure your report appears on Binokula, your tenants admin account must be a member of the workspace.</p>
@@ -828,27 +841,19 @@
 <li>Navigate to your chosen workspace.</li>
 <li>At the top click "Access".</li>
 </ol>
-<details>
-  <summary>
-    Workspace access button
-  </summary>
-  ![Workspace access button](images/admin-guide/workspace_access.PNG "Workspace access button")
-</details>
-
+<p>Workspace access button
+  <img alt="Workspace access button" src="../images/admin-guide/workspace_access.PNG" title="Workspace access button" /></p>
 <ul>
 <li>In the Email search bar start typing admin. Your tenants admin account will have the same domain as your publisher account.</li>
 <li>In the drop down menu select "Member".</li>
-<li>Click Add.</li>
-</ul>
-<details>
-  <summary>
-    Add admin to workspace
-  </summary>
-  ![Add admin to workspace screenshot](images/admin-guide/add_admin_to_workspace.PNG "Add admin to workspace")
-</details>
-
-<ul>
-<li>Reports within that workspace will now be available in Binokula after a Report Refresh in the Binokula Admin portal.</li>
+<li>
+<p>Click Add.
+  Add admin to workspace
+  <img alt="Add admin to workspace screenshot" src="../images/admin-guide/add_admin_to_workspace.PNG" title="Add admin to workspace" /></p>
+</li>
+<li>
+<p>Reports within that workspace will now be available in Binokula after a Report Refresh in the Binokula Admin portal.</p>
+</li>
 </ul>
 <h4 id="publishing-power-bi-reports">Publishing Power BI Reports</h4>
 <p>Once you have built and tested your Power BI report, the next step is to publish the report to your dedicated Tenant. This is done with the unique publisher account, details you would have received as part of requesting your Binokula Tenant. You can sign-in with the publisher account by clicking on "Sign in" in Power BI Desktop. If you are already signed in with a different account, click on the account name and select "Switch account". Once you are signed in, you can publish the report by:</p>
@@ -879,13 +884,8 @@
 </blockquote>
 <h4 id="report-for-mobile-viewing">Report for Mobile Viewing</h4>
 <p>Power BI Mobile is supported by Binokula. All you need to do is create the mobile view of a report in the Power BI Desktop file and publish it to your Tenant. Please see <a href="https://docs.microsoft.com/en-us/power-bi/desktop-create-phone-report">Microsoft's Power BI Phone Report documentation</a> for more information on configuring phone layout on Power BI Desktop.</p>
-<details>
-  <summary>
-    Show Phone Layout option in Power BI Desktop
-  </summary>
-  ![alt text](images/admin-guide/phone_layout.PNG "Phone Layout example")
-</details>
-
+<p>Show Phone Layout option in Power BI Desktop
+  <img alt="alt text" src="../images/admin-guide/phone_layout.PNG" title="Phone Layout example" /></p>
 <h3 id="managing-tenant-details">Managing Tenant details</h3>
 <h4 id="assigning-your-organization-name-to-your-tenant">Assigning your organization name to your tenant</h4>
 <p>Your organization name will be used in automated emails sent out to users and other front facing features that labels your tenant.</p>
@@ -929,15 +929,10 @@
 <li>Enable/disable admins</li>
 <li>Enable/disable report sharing</li>
 <li>Reset passwords</li>
-<li>Test Users</li>
+<li>Test Users
+  User management functions
+  <img alt="alt text" src="../images/admin-guide/user_functions.PNG" title="User management functions" /></li>
 </ul>
-<details>
-  <summary>
-    User management functions
-  </summary>
-  ![alt text](images/admin-guide/user_functions.PNG "User management functions")
-</details>
-
 <p>Note:</p>
 <blockquote>
 <ul>
@@ -948,14 +943,13 @@
 <h4 id="testing-users">Testing Users</h4>
 <p>It is possible to test users under your tenant. Admins can imitate users in their tenant through <a href="https://binokula.app/Admin/Users">user management</a>. 
 Simply click the "Test User" link under the associated user and follow the instructions on the prompt that displays.</p>
-<details>
-  <summary>
-    Testing Users
-  </summary>
-  ![alt text](images/admin-guide/test_user.PNG "User management functions")
-</details>
-
+<p>Testing Users
+<img alt="alt text" src="../images/admin-guide/test_user.PNG" title="User management functions" /></p>
 <p>A message will prompt you to copy a link into a private or incognito browser to ensure you don't lose your current Binokula session.</p>
+<h4 id="report-export-permissions">Report Export Permissions</h4>
+<p>The Export feature will be activated for a customer upon request.  Once activated, the customer’s Binokula Admin can enable the Export function for specific users as required.  Users can then export a report by: displaying the Reports screen, for a report selecting whether to export to a PDF or PowerPoint file, then clicking ‘Export Report’.    </p>
+<p>Once ‘Export Report’ is clicked, a new tab is opened and the report is exported in the background.  Once the export processing is complete, a download link is displayed and the report can be downloaded using the normal browser download function. 
+<img alt="alt text" src="../images/admin-guide/enable_report_export.png" title="Enable Export Report" /></p>
 <h4 id="report-sharing-permissions">Report Sharing Permissions</h4>
 <p>Admins have the ability to grant users the ability to share their reports via a link. This shared link is secured and only people who have the generated link can view the report. The shared report will be have the same view as the user who shared the link. When the report sharing is disabled for a user, all existing shared links for each report will become invalid.</p>
 <h3 id="managing-reports">Managing Reports</h3>
@@ -978,15 +972,10 @@ Simply click the "Test User" link under the associated user and follow the instr
 <li>Delete a new User Group</li>
 <li>Edit User Group Details</li>
 <li>Assign existing users to the group</li>
-<li>Assign the User Group to one or multiple report groups</li>
+<li>Assign the User Group to one or multiple report groups
+  User group functions
+ <img alt="alt" src="../images/admin-guide/user_group.PNG" title="User group functions" /></li>
 </ul>
-<details>
-  <summary>
-    User group functions
-  </summary>
-  ![alt text](images/admin-guide/user_group.PNG "User group functions")
-</details>
-
 <h4 id="user-group-structure">User Group Structure</h4>
 <p>Users within a User Group can be assigned to a Report Group. This function allows easier assignment and reassignment of multiple users to reports.</p>
 <p><img alt="alt text" src="../images/admin-guide/user_group_diagram.png" title="User group diagram" /></p>
@@ -1022,12 +1011,12 @@ Simply click the "Test User" link under the associated user and follow the instr
 </li>
 <li>Click Save.</li>
 </ol>
-<details>
-  <summary>
-    Custom email example
-  </summary>
-  ![alt text](images/admin-guide/custom_email.PNG "Custom Email Example")
-</details>
+<p>Custom email example
+ <img alt="alt text" src="../images/admin-guide/custom_email.PNG" title="Custom Email Example" /></p>
+<h3 id="custom-binokula-bar-colour">Custom Binokula Bar Colour</h3>
+<p>It is possible to customize the Binokula Bar Colour.</p>
+<p>Custom Binokula Bar Colour example
+<img alt="alt text" src="../images/admin-guide/custom_binokula_bar_colour.png" title="Custom Email Example" /></p>
                 
               
               

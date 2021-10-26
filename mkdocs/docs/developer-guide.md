@@ -21,13 +21,9 @@ To manage your client secrets:
 1. Navigate to the Administrator page
 + Go to Portal Settings
 + Click "Client Secret Options"
-<details>
-  <summary>
-    Client Secret Options
-  </summary>
-  ![alt text](images/developer-guide/client_secret_options.PNG "Client Secret Options")
-</details>
 
+ ![alt text](images/developer-guide/client_secret_options.PNG "Client Secret Options")
+ 
 + From there you can delete client secrets and generate new ones by clicking the "Generate New Client Secret" button
 
 Note: Each tenant must have atleast 1 client secret

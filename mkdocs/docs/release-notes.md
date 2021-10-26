@@ -1,5 +1,10 @@
 # Release Notes ![](images/favicon.png)
 
+###October 26, 2021
+####New 
+* The new [Export to File](../admin-guide/#report-export-permissions)   feature enables a user to export a report to a PDF or a PowerPoint file.  The feature exports all report tabs with the filters set as they were at the time the report was published.  
+
+
 ###July 24, 2021
 ####New 
 * The colour of the Binokula bar can be customised. The setting is on the ‘Administration / Portal Settings’ page.

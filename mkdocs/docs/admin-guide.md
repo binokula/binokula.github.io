@@ -28,41 +28,30 @@ Binokula uses Microsoft Power BI as its report building tool. It is possible for
 Building a report with RLS requires that the report adhere to the following:
 
 * Must have a security role called "User_Security" in the Power BI Model.
-<details>
-  <summary>
-    Show "User_Security" example
-  </summary>
-  ![alt text](images/admin-guide/user_security_role.PNG "User_Security role")
-</details>
+ 
+  Show "User_Security" example
+ ![alt text](images/admin-guide/user_security_role.PNG "User_Security role")
+
+
 * Must have a DAX filter on the Entity to User Mapping List which uses the USERNAME() function.
 * The table the DAX filter is on must contain the list of the users emails.
-<details>
-  <summary>
-    Show USERNAME() example
-  </summary>
+  Show USERNAME() example
   ![alt text](images/admin-guide/username_filter.PNG "USERNAME() filter")
-</details>
+
 * Cross filter direction should be set to Both for the relationship with Entity to User Mapping List
 * Apply security filter in both directions should be ticked for the relationship with Entity to User Mapping List
-<details>
-  <summary>
-    Show Cross Filter and Apply Security Fiter Both example
-  </summary>
+  Show Cross Filter and Apply Security Fiter Both example
   ![alt text](images/admin-guide/filter_both_tick.PNG "Both filter example")
-</details>
-
+ 
 ####Testing Power BI RLS
 Once you have configured the RLS as shown above, you can test the security by impersonating a user. To do this:
 
 1. Click "View as Roles" in Power BI Desktop;
 + Tick "Other User" and enter the test user's email address; and
 + Tick "User_Security" and click OK.
-<details>
-  <summary>
-    Show "View as Roles" screen
-  </summary>
-  ![alt text](images/admin-guide/test_security.PNG "Test security example")
-</details>
+ Show "View as Roles" screen
+ ![alt text](images/admin-guide/test_security.PNG "Test security example")
+ 
 You should now only see data that the test user should see.
 
 ####Power BI Workspaces
@@ -73,22 +62,16 @@ To include your tenants admin to your selected workspace:
 1. Log into [powerbi.com](https://app.powerbi.com/) as your assigned publisher account.
 * Navigate to your chosen workspace.
 * At the top click "Access".
-<details>
-  <summary>
-    Workspace access button
-  </summary>
+ 
+  Workspace access button
   ![Workspace access button](images/admin-guide/workspace_access.PNG "Workspace access button")
-</details>
 
 * In the Email search bar start typing admin. Your tenants admin account will have the same domain as your publisher account.
 * In the drop down menu select "Member".
 * Click Add.
-<details>
-  <summary>
-    Add admin to workspace
-  </summary>
+  Add admin to workspace
   ![Add admin to workspace screenshot](images/admin-guide/add_admin_to_workspace.PNG "Add admin to workspace")
-</details>
+ 
 
 * Reports within that workspace will now be available in Binokula after a Report Refresh in the Binokula Admin portal.
 
@@ -117,12 +100,10 @@ Note:
 
 ####Report for Mobile Viewing
 Power BI Mobile is supported by Binokula. All you need to do is create the mobile view of a report in the Power BI Desktop file and publish it to your Tenant. Please see [Microsoft's Power BI Phone Report documentation](https://docs.microsoft.com/en-us/power-bi/desktop-create-phone-report) for more information on configuring phone layout on Power BI Desktop.
-<details>
-  <summary>
-    Show Phone Layout option in Power BI Desktop
-  </summary>
+
+  Show Phone Layout option in Power BI Desktop
   ![alt text](images/admin-guide/phone_layout.PNG "Phone Layout example")
-</details>
+ 
 
 ###Managing Tenant details
 
@@ -169,13 +150,8 @@ User Management is done through the [user management link](https://binokula.app/
 * Enable/disable report sharing
 * Reset passwords
 * Test Users
-
-<details>
-  <summary>
-    User management functions
-  </summary>
+  User management functions
   ![alt text](images/admin-guide/user_functions.PNG "User management functions")
-</details>
 
 Note:
 > * Users are automatically added when programmatically signed in with the [single-sign-on API](../developer-guide/#single-sign-on).
@@ -185,14 +161,18 @@ Note:
 It is possible to test users under your tenant. Admins can imitate users in their tenant through [user management](https://binokula.app/Admin/Users). 
 Simply click the "Test User" link under the associated user and follow the instructions on the prompt that displays.
 
-<details>
-  <summary>
-    Testing Users
-  </summary>
-  ![alt text](images/admin-guide/test_user.PNG "User management functions")
-</details>
+Testing Users
+![alt text](images/admin-guide/test_user.PNG "User management functions")
+ 
 
 A message will prompt you to copy a link into a private or incognito browser to ensure you don't lose your current Binokula session.
+
+####Report Export Permissions
+The Export feature will be activated for a customer upon request.  Once activated, the customer’s Binokula Admin can enable the Export function for specific users as required.  Users can then export a report by: displaying the Reports screen, for a report selecting whether to export to a PDF or PowerPoint file, then clicking ‘Export Report’.    
+
+Once ‘Export Report’ is clicked, a new tab is opened and the report is exported in the background.  Once the export processing is complete, a download link is displayed and the report can be downloaded using the normal browser download function. 
+![alt text](images/admin-guide/enable_report_export.png "Enable Export Report")
+
 
 ####Report Sharing Permissions
 Admins have the ability to grant users the ability to share their reports via a link. This shared link is secured and only people who have the generated link can view the report. The shared report will be have the same view as the user who shared the link. When the report sharing is disabled for a user, all existing shared links for each report will become invalid.
@@ -213,14 +193,9 @@ User Group Management is done through [the user group link](https://binokula.app
 * Edit User Group Details
 * Assign existing users to the group
 * Assign the User Group to one or multiple report groups
-
-<details>
-  <summary>
-    User group functions
-  </summary>
-  ![alt text](images/admin-guide/user_group.PNG "User group functions")
-</details>
-
+  User group functions
+ ![alt](images/admin-guide/user_group.PNG "User group functions")
+ 
 ####User Group Structure
 Users within a User Group can be assigned to a Report Group. This function allows easier assignment and reassignment of multiple users to reports.
 
@@ -255,9 +230,12 @@ It is possible to customize invitation emails to your users. An example of a cus
     + Enable Custom Email checkbox - Use your custom email. Default email is used if unticked.
 + Click Save.
 
-<details>
-  <summary>
-    Custom email example
-  </summary>
-  ![alt text](images/admin-guide/custom_email.PNG "Custom Email Example")
-</details>
+ Custom email example
+ ![alt text](images/admin-guide/custom_email.PNG "Custom Email Example")
+
+
+###Custom Binokula Bar Colour
+It is possible to customize the Binokula Bar Colour.
+
+Custom Binokula Bar Colour example
+![alt text](images/admin-guide/custom_binokula_bar_colour.png "Custom Email Example")

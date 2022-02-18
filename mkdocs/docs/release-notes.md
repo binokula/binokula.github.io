@@ -1,4 +1,8 @@
 # Release Notes ![](images/favicon.png)
+###February 18, 2022
+####New 
+* The new Snapshot to PDF feature enables a user to snapshot the report into the print widget. Then it could save into PDF format. 
+
 
 ###October 26, 2021
 ####New 

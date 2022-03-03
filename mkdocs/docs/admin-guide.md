@@ -192,6 +192,8 @@ Go to https://binokula.app/Admin/Reports
 ![alt](images/admin-guide/report_reference.PNG "Add Report Reference")
 
 **Consume Report Reference:**
+
+
 * [External Access Using Report Reference](../developer-guide/#redirect-to-binokula-external-access-using-report-reference)   
 
 * [Get Embed Token Using Report Reference](../developer-guide/#get-embed-token-using-report-reference)   

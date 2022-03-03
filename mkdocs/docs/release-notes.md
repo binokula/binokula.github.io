@@ -1,4 +1,16 @@
 # Release Notes ![](images/favicon.png)
+
+###March 3, 2022
+####New 
+* The new "Report Reference" featrue for "External Access" and "Get Embed Token" are avaliable on request. find detail on the following.
+* [Report Reference](../admin-guide/#report-reference)   
+
+* [External Access Using Report Reference](../developer-guide/#redirect-to-binokula-external-access-using-report-reference)   
+
+* [Get Embed Token Using Report Reference](../developer-guide/#get-embed-token-using-report-reference)   
+ 
+
+
 ###February 18, 2022
 ####New 
 * The new Snapshot to PDF feature enables a user to snapshot the report into the print widget. Then it could save into PDF format. 

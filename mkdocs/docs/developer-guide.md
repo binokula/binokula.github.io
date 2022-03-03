@@ -102,7 +102,27 @@ RLS Aliasing Notes:
 * Status: 200 OK
 * Redirects to users Binokula homepage
 
+#####(Redirect to) Binokula External Access using report reference
+**URL:** <https://binokula.app/Account/ExternalAccessReportRef>
+
+**Parameters:**
+
+* email
+* access_token
+* tenant
+* reportRef **(optional)**
+    * To redirect straight to the desired report
+
+**Response:**
+
+* Status: 200 OK
+* Redirects to users Binokula homepage
+
 **Note:** Credentials are URL encoded
+
+**Setup Report Reference:**
+
+* Go to [Report Reference](../admin-guide/#report-reference)   
 
 ###User Management
 ####Overview
@@ -304,26 +324,26 @@ Note: Binokula is not responsible for the security implemented on your independe
 ```json
 [
     {
-        "id": "34b55d62-8f20-4923-b8ee-0c3f58f94892",
+        "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx",
         "name": "Sample Report 01",
-        "webUrl": "https://app.powerbi.com/groups/6734dd6e-8ff5-567h-3dfg-b52d2088dc01/reports/34b534t82-8e31-5647-v6ff-0c3f58f94892",
-        "embedUrl": "https://app.powerbi.com/reportEmbed?reportId=34b55d62-8f20-4923-b8ee-0c3f58f94892&groupId=5628bb5c-3dd1-489e-8ecd-b52d2088dc01&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1TT1VUSEVBU1QtcmVkaXJlY3fryW5hbHlzaXMud2luZG93cy5uZXQifQ%3d%3d",
-        "datasetId": "a938cc1f-9883-4987-a74a-c37dc2e249bc"
+        "webUrl": "https://app.powerbi.com/groups/groupsID/reports/reportid",
+        "embedUrl": "https://app.powerbi.com/reportEmbed?reportId=...&groupId=....&config=...",
+        "datasetId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx"
     },
-    {
-        "id": "cac52e2a-3e77-4078-a9bb-f63fb730cfc6",
+   {
+        "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx",
         "name": "Sample Report 02",
-        "webUrl": "https://app.powerbi.com/groups/6734dd6e-8ff5-567h-3dfg-b52d2088dc01/reports/34b534t82-8e31-5647-v6ff-0c3f58f94892",
-        "embedUrl": "https://app.powerbi.com/reportEmbed?reportId=cac52e2a-3e77-4078-a9bb-f63fb730cfc6&groupId=5628bb5c-3dd1-489e-8ecd-b52d2088dc01&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1TT1VUSEVBU1QtcmVkaXJlY3fryW5hbHlzaXMud2luZG93cy5uZXQifQ%3d%3d",
-        "datasetId": "1dyolo48-c963-4863-8c87-521af138b12e"
+        "webUrl": "https://app.powerbi.com/groups/groupsID/reports/reportid",
+        "embedUrl": "https://app.powerbi.com/reportEmbed?reportId=...&groupId=....&config=...",
+        "datasetId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx"
     },
     {
-        "id": "1fc65d7d-9c70-47cc-a40f-ce3d95c904a3",
+        "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx",
         "name": "Sample Report 03",
-        "webUrl": "https://app.powerbi.com/groups/6734dd6e-8ff5-567h-3dfg-b52d2088dc01/reports/34b534t82-8e31-5647-v6ff-0c3f58f94892",
-        "embedUrl": "https://app.powerbi.com/reportEmbed?reportId=1fc65d7d-9c70-47cc-a40f-ce3d95c904a3&groupId=5628bb5c-3dd1-489e-8ecd-b52d2088dc01&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1TT1VUSEVBU1QtcmVkaXJlY3fryW5hbHlzaXMud2luZG93cy5uZXQifQ%3d%3d",
-        "datasetId": "41986b45-0e9a-4881-9ec4-2yolo825e199"
-    }
+        "webUrl": "https://app.powerbi.com/groups/groupsID/reports/reportid",
+        "embedUrl": "https://app.powerbi.com/reportEmbed?reportId=...&groupId=....&config=...",
+        "datasetId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx"
+    },
 ]
 ```
 
@@ -352,10 +372,52 @@ Note: Binokula is not responsible for the security implemented on your independe
 ```json
 {
     "token": "H4...rf",
-    "tokenId": "02ee3057-72a9-4a22-92b8-6de608135524",
-    "expiration": "2019-03-05T03:05:36Z"
+    "tokenId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx",
+    "expiration": "2019-03-05T03:05:36Z",
+    "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx",
+    "name": "Sample Report 03",
+    "webUrl": "https://app.powerbi.com/groups/groupsID/reports/reportid",
+    "embedUrl": "https://app.powerbi.com/reportEmbed?reportId=...&groupId=....&config=...",
+    "datasetId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx"
 }
 ```
+
+#####Get Embed Token Using Report Reference
+**URL:** <https://api.binokula.app/api/Report/EmbedToken>
+
+**HTTP Verb:** Get
+
+**Headers:**
+
+* client_secret
+
+**Parameters:**
+
+* email
+* tenant
+* reportRef
+* code
+    * This is a function key provided to the customer to access this endpoint
+
+**Response:**
+
+* Status: 200 OK
+
+```json
+{
+    "token": "H4...rf",
+    "tokenId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx",
+    "expiration": "2019-03-05T03:05:36Z",
+    "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx",
+    "name": "Sample Report 03",
+    "webUrl": "https://app.powerbi.com/groups/groupsID/reports/reportid",
+    "embedUrl": "https://app.powerbi.com/reportEmbed?reportId=...&groupId=....&config=...",
+    "datasetId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx"
+}
+```
+**Setup Report Reference:**
+
+* Go to [Report Reference](../admin-guide/#report-reference)   
 
 ####Using the Power BI JavaScript API
 #####Overview

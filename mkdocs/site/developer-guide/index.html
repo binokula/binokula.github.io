@@ -308,6 +308,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#redirect-to-binokula-external-access-using-report-reference" class="md-nav__link">
+    (Redirect to) Binokula External Access using report reference
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -419,6 +426,13 @@
           <li class="md-nav__item">
   <a href="#get-embed-token" class="md-nav__link">
     Get Embed Token
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-embed-token-using-report-reference" class="md-nav__link">
+    Get Embed Token Using Report Reference
   </a>
   
 </li>
@@ -618,6 +632,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#redirect-to-binokula-external-access-using-report-reference" class="md-nav__link">
+    (Redirect to) Binokula External Access using report reference
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -729,6 +750,13 @@
           <li class="md-nav__item">
   <a href="#get-embed-token" class="md-nav__link">
     Get Embed Token
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-embed-token-using-report-reference" class="md-nav__link">
+    Get Embed Token Using Report Reference
   </a>
   
 </li>
@@ -895,7 +923,28 @@
 <li>Status: 200 OK</li>
 <li>Redirects to users Binokula homepage</li>
 </ul>
+<h5 id="redirect-to-binokula-external-access-using-report-reference">(Redirect to) Binokula External Access using report reference</h5>
+<p><strong>URL:</strong> <a href="https://binokula.app/Account/ExternalAccessReportRef">https://binokula.app/Account/ExternalAccessReportRef</a></p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li>email</li>
+<li>access_token</li>
+<li>tenant</li>
+<li>reportRef <strong>(optional)</strong><ul>
+<li>To redirect straight to the desired report</li>
+</ul>
+</li>
+</ul>
+<p><strong>Response:</strong></p>
+<ul>
+<li>Status: 200 OK</li>
+<li>Redirects to users Binokula homepage</li>
+</ul>
 <p><strong>Note:</strong> Credentials are URL encoded</p>
+<p><strong>Setup Report Reference:</strong></p>
+<ul>
+<li>Go to <a href="../admin-guide/#report-reference">Report Reference</a>   </li>
+</ul>
 <h3 id="user-management">User Management</h3>
 <h4 id="overview_1">Overview</h4>
 <p>The User Management API enables external applications to register, delete, enable or disable users to their Binokula tenant. This register endpoint creates a user with an email and generates a secure password for the newly created user. The password is not known to the external application nor the registered user. To access this endpoint the external application must supply the API a valid client secret key along with tenant name.</p>
@@ -1090,26 +1139,26 @@
 </ul>
 <div class="highlight"><pre><span></span><code><span class="p">[</span>
     <span class="p">{</span>
-        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;34b55d62-8f20-4923-b8ee-0c3f58f94892&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx&quot;</span><span class="p">,</span>
         <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Sample Report 01&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;webUrl&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.powerbi.com/groups/6734dd6e-8ff5-567h-3dfg-b52d2088dc01/reports/34b534t82-8e31-5647-v6ff-0c3f58f94892&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;embedUrl&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.powerbi.com/reportEmbed?reportId=34b55d62-8f20-4923-b8ee-0c3f58f94892&amp;groupId=5628bb5c-3dd1-489e-8ecd-b52d2088dc01&amp;config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1TT1VUSEVBU1QtcmVkaXJlY3fryW5hbHlzaXMud2luZG93cy5uZXQifQ%3d%3d&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;datasetId&quot;</span><span class="p">:</span> <span class="s2">&quot;a938cc1f-9883-4987-a74a-c37dc2e249bc&quot;</span>
+        <span class="nt">&quot;webUrl&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.powerbi.com/groups/groupsID/reports/reportid&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;embedUrl&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.powerbi.com/reportEmbed?reportId=...&amp;groupId=....&amp;config=...&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;datasetId&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx&quot;</span>
     <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;cac52e2a-3e77-4078-a9bb-f63fb730cfc6&quot;</span><span class="p">,</span>
+   <span class="p">{</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx&quot;</span><span class="p">,</span>
         <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Sample Report 02&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;webUrl&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.powerbi.com/groups/6734dd6e-8ff5-567h-3dfg-b52d2088dc01/reports/34b534t82-8e31-5647-v6ff-0c3f58f94892&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;embedUrl&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.powerbi.com/reportEmbed?reportId=cac52e2a-3e77-4078-a9bb-f63fb730cfc6&amp;groupId=5628bb5c-3dd1-489e-8ecd-b52d2088dc01&amp;config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1TT1VUSEVBU1QtcmVkaXJlY3fryW5hbHlzaXMud2luZG93cy5uZXQifQ%3d%3d&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;datasetId&quot;</span><span class="p">:</span> <span class="s2">&quot;1dyolo48-c963-4863-8c87-521af138b12e&quot;</span>
+        <span class="nt">&quot;webUrl&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.powerbi.com/groups/groupsID/reports/reportid&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;embedUrl&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.powerbi.com/reportEmbed?reportId=...&amp;groupId=....&amp;config=...&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;datasetId&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx&quot;</span>
     <span class="p">},</span>
     <span class="p">{</span>
-        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1fc65d7d-9c70-47cc-a40f-ce3d95c904a3&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx&quot;</span><span class="p">,</span>
         <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Sample Report 03&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;webUrl&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.powerbi.com/groups/6734dd6e-8ff5-567h-3dfg-b52d2088dc01/reports/34b534t82-8e31-5647-v6ff-0c3f58f94892&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;embedUrl&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.powerbi.com/reportEmbed?reportId=1fc65d7d-9c70-47cc-a40f-ce3d95c904a3&amp;groupId=5628bb5c-3dd1-489e-8ecd-b52d2088dc01&amp;config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1TT1VUSEVBU1QtcmVkaXJlY3fryW5hbHlzaXMud2luZG93cy5uZXQifQ%3d%3d&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;datasetId&quot;</span><span class="p">:</span> <span class="s2">&quot;41986b45-0e9a-4881-9ec4-2yolo825e199&quot;</span>
-    <span class="p">}</span>
+        <span class="nt">&quot;webUrl&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.powerbi.com/groups/groupsID/reports/reportid&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;embedUrl&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.powerbi.com/reportEmbed?reportId=...&amp;groupId=....&amp;config=...&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;datasetId&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx&quot;</span>
+    <span class="p">},</span>
 <span class="p">]</span>
 </code></pre></div>
 <h5 id="get-embed-token">Get Embed Token</h5>
@@ -1136,10 +1185,51 @@
 </ul>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;token&quot;</span><span class="p">:</span> <span class="s2">&quot;H4...rf&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;tokenId&quot;</span><span class="p">:</span> <span class="s2">&quot;02ee3057-72a9-4a22-92b8-6de608135524&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;expiration&quot;</span><span class="p">:</span> <span class="s2">&quot;2019-03-05T03:05:36Z&quot;</span>
+    <span class="nt">&quot;tokenId&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;expiration&quot;</span><span class="p">:</span> <span class="s2">&quot;2019-03-05T03:05:36Z&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Sample Report 03&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;webUrl&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.powerbi.com/groups/groupsID/reports/reportid&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;embedUrl&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.powerbi.com/reportEmbed?reportId=...&amp;groupId=....&amp;config=...&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;datasetId&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx&quot;</span>
 <span class="p">}</span>
 </code></pre></div>
+<h5 id="get-embed-token-using-report-reference">Get Embed Token Using Report Reference</h5>
+<p><strong>URL:</strong> <a href="https://api.binokula.app/api/Report/EmbedToken">https://api.binokula.app/api/Report/EmbedToken</a></p>
+<p><strong>HTTP Verb:</strong> Get</p>
+<p><strong>Headers:</strong></p>
+<ul>
+<li>client_secret</li>
+</ul>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li>email</li>
+<li>tenant</li>
+<li>reportRef</li>
+<li>code<ul>
+<li>This is a function key provided to the customer to access this endpoint</li>
+</ul>
+</li>
+</ul>
+<p><strong>Response:</strong></p>
+<ul>
+<li>Status: 200 OK</li>
+</ul>
+<p><div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;token&quot;</span><span class="p">:</span> <span class="s2">&quot;H4...rf&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;tokenId&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;expiration&quot;</span><span class="p">:</span> <span class="s2">&quot;2019-03-05T03:05:36Z&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Sample Report 03&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;webUrl&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.powerbi.com/groups/groupsID/reports/reportid&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;embedUrl&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.powerbi.com/reportEmbed?reportId=...&amp;groupId=....&amp;config=...&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;datasetId&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<strong>Setup Report Reference:</strong></p>
+<ul>
+<li>Go to <a href="../admin-guide/#report-reference">Report Reference</a>   </li>
+</ul>
 <h4 id="using-the-power-bi-javascript-api">Using the Power BI JavaScript API</h4>
 <h5 id="overview_3">Overview</h5>
 <p>To embed a Binokula Generated Power BI Report into your website you must use the Power BI JavaScript API. The JavaScript API will requires you to provide it with the Report ID, Embed URL and Embed Token. These can be obtain through the Binokula API as demonstrated in <a href="../developer-guide/#binokula-generated-report-properties-api">Binokula Generated Report Properties API</a>. </p>

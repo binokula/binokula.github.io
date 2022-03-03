@@ -185,6 +185,18 @@ Report Management is done through the [report management link](https://binokula.
 
 * Enforce/Ignore User Security Roles on the selected report
 
+####Report Reference
+
+Ask admin to enable report reference feature.
+Go to https://binokula.app/Admin/Reports
+![alt](images/admin-guide/report_reference.PNG "Add Report Reference")
+
+**Consume Report Reference:**
+* [External Access Using Report Reference](../developer-guide/#redirect-to-binokula-external-access-using-report-reference)   
+
+* [Get Embed Token Using Report Reference](../developer-guide/#get-embed-token-using-report-reference)   
+ 
+
 ###User Groups
 User Group Management is done through [the user group link](https://binokula.app/Admin/UserGroups) in the admin portal. The User Group management page allows admins to:
 
@@ -218,7 +230,7 @@ Admins have the option of enabling username aliasing to their users. Users can s
 + Check the checkbox to enable their alias or uncheck to disable alias
 + Click the "Save" button to save your changes
 
-###Custom Emails
+####Custom Emails
 It is possible to customize invitation emails to your users. An example of a customized email can be found below.
 
 1. Navigate to the Admin page then select "Portal Settings".
@@ -234,8 +246,15 @@ It is possible to customize invitation emails to your users. An example of a cus
  ![alt text](images/admin-guide/custom_email.PNG "Custom Email Example")
 
 
-###Custom Binokula Bar Colour
+####Custom Binokula Bar Colour
 It is possible to customize the Binokula Bar Colour.
 
 Custom Binokula Bar Colour example
 ![alt text](images/admin-guide/custom_binokula_bar_colour.png "Custom Email Example")
+
+
+
+
+
+
+

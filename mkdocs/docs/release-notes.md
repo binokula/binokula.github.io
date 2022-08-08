@@ -1,8 +1,14 @@
 # Release Notes ![](images/favicon.png)
 
+###July 2, 2022
+####New 
+* The new "Admin-only" featrue are avaliable.
+  * [Edit User Name](/admin-guide/#edit-user-name)
+  * [Portal Branding](/admin-guide/#portal-branding)
+
 ###March 3, 2022
 ####New 
-* The new "Report Reference" featrue for "External Access" and "Get Embed Token" are avaliable on request. find detail on the following.
+* The new "Report Reference" feature for "External Access" and "Get Embed Token" are avaliable on request. find detail on the following.
 * [Report Reference](../admin-guide/#report-reference)   
 
 * [External Access Using Report Reference](../developer-guide/#redirect-to-binokula-external-access-using-report-reference)   
@@ -70,7 +76,7 @@
 ###March 8, 2019
 ####New
 * [Embedding Binokula generated reports into your own website](../developer-guide/#embedding-binokula-generated-reports). Developers can now embed Binokula generated reports into their own websites using the Power BI JavaScript API. The new Binokula API endpoints can provide developers with Report ID, Embedded URL and Embed Token in order to use the Power BI JavaScript API.
-* [User Activity Binokula API Endpoint](../developer-guide/#user-activity-list). Developers can retrieve Event Activity in our new Binokula API endpoint. This API can be filtered by user event and start/end time.
+* [User Activity Binokula API Endpoint](../developer-guide/#user-activity-list). Developers can retrieve Event Activity in our new Binoku#edit-user-namela API endpoint. This API can be filtered by user event and start/end time.
 * [User Group Binokula API Endpoint](../developer-guide/#user-activity-list). Developers can retrieve User Group information in our new Binokula API endpoint. This API can be filtered by user and/or user group.
 
 ###February 19, 2019

@@ -254,7 +254,18 @@ It is possible to customize the Binokula Bar Colour.
 Custom Binokula Bar Colour example
 ![alt text](images/admin-guide/custom_binokula_bar_colour.png "Custom Email Example")
 
+####Edit User Name
+1. Admin status and menu option only
+2. Integrated with existing User Name options in the User Management menu
++ Process= Click 'Edit' to bring up a text update box that overwrites directly over the existing email for you to update and save.
+3. Provides you with a quick opportunity to update team email addresses, whilst maintaining all user group and report group settings and report access.
 
+####Portal Branding
+1. Admin status and menu option only
+2. The new Portal Branding page is included on the Administration menu
+   + The ability to self-manage logo updates is now included.
+   + The Binokula Bar colour update has been moved here from Portal Settings as this is branding related.
+3. Provides you with the opportunity to update branding content as you see fit.
 
 
 

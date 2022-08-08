@@ -96,6 +96,7 @@ RLS Aliasing Notes:
 * tenant
 * reportId **(optional)**
     * To redirect straight to the desired report
+* allowNewUsers (True or False, where True allow creating new user)
 
 **Response:**
 
@@ -112,6 +113,7 @@ RLS Aliasing Notes:
 * tenant
 * reportRef **(optional)**
     * To redirect straight to the desired report
+* allowNewUsers (True or False, where True allow creating new user)
 
 **Response:**
 

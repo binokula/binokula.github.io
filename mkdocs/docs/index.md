@@ -1,3 +1,9 @@
+
+!!! note
+    **If you are interested in BINOKULA INSTANT (hosted version) please refer directly to the following information: [Binokula instant](https://binokula.com/instant). **
+
+
+
 # Binokula ![](images/favicon.png)
 
 **Get beautiful, interactive reports to your business affiliates securely, easily and quickly.**
@@ -18,6 +24,7 @@ gantt
     
   
 ```
+
 > Binokula has simplified the process of report sharing to the point where the hardest part now becomes deciding whether you want to show a bar graph or pie chart in your report. 
 
 ###What is Binokula?
